@@ -1,14 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-conts NAME_LENGTH 100;
+#define MAX_NAME_LENGTH 100
 
 int main()
 {
-    char name[NAME_LENGTH];
+    char name[MAX_NAME_LENGTH];
 
-    printf("What is your name : ");
-    scanf("%99s", name);  
+    printf("Enter your name: ");
+    scanf("%99s", name);  // Use %99s to prevent buffer overflow (leaving space for null terminator)
+
     printf("Hello, %s!\n", name);
 
     getchar();

@@ -1,54 +1,36 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include<cs50.h>
+void numberOfYears(int initialNumber, int targetNumber){
+    int currentPopulation = initialNumber;
+    int numberOfYearsNeeded = 0;
+    int diePerYear;
+    int bornPerYear;
+    int netPerYear;
+    do{
+        diePerYear = currentPopulation/4;
+        bornPerYear = currentPopulation/3;
+        netPerYear = bornPerYear - diePerYear;
+        currentPopulation += netPerYear;
+        numberOfYearsNeeded++;
 
-int main()
-{
-    int startingPopulation, endingPopulation;
+    }while(currentPopulation < targetNumber);
+    // numberOfYearsNeeded = (targetNumber - initialNumber)/netPerYear;
+    printf("Years needed: %d\n", numberOfYearsNeeded);
+}
 
-    while (1)
-    {
-        printf("Enter the starting population size: ");
-        if (scanf("%d", &startingPopulation) != 1 || startingPopulation < 0)
-        {
-            printf("Invalid input. Please enter a positive number.\n");
-            continue;
-        }
 
-        printf("Enter the ending population size: ");
-        if (scanf("%d", &endingPopulation) != 1 || endingPopulation < 0)
-        {
-            printf("Invalid input. Please enter a positive number.\n");
-            continue;
-        }
+int main(void){
+    int startingPopulation;
+    int targetPopulation;
+    do{
+        startingPopulation = get_int("Starting size: ");
+    }while(startingPopulation < 9);
 
-        if (endingPopulation < startingPopulation)
-        {
-            printf("The ending population should be greater than or equal to the starting population.\n");
-        }
-        else
-        {
-            break;
-        }
-    }
+    do{
+        targetPopulation = get_int("Target size: ");
+    }while(targetPopulation < startingPopulation);
 
-    if (endingPopulation == startingPopulation)
-    {
-        printf("Years = 0.\n");
-    }
-    else
-    {
-        int years = 0;
+    numberOfYears(startingPopulation, targetPopulation);
 
-        while (startingPopulation < endingPopulation)
-        {
-            int births = startingPopulation / 3;
-            int deaths = startingPopulation / 4;
-            startingPopulation += births - deaths;
-            years++;
-        }
 
-        printf("It takes %d years to reach the ending population size.\n", years);
-    }
-
-    return 0;
 }

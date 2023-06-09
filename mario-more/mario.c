@@ -19,7 +19,7 @@ void drawPyramid(int numberOfLevels){
                 printf(" ");
             }
         }
-        printf(" ");
+        printf("  ");
         for(int j = 1; j <= numberOfLevels; j++){
             if(i>=j){
                 printf("#");

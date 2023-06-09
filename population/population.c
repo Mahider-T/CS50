@@ -6,6 +6,10 @@ void numberOfYears(int initialNumber, int targetNumber){
     int diePerYear;
     int bornPerYear;
     int netPerYear;
+
+    if(initialNumber == targetNumber){
+        printf("Years: %d\n", 0);
+    }
     do{
         diePerYear = currentPopulation/4;
         bornPerYear = currentPopulation/3;

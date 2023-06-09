@@ -15,7 +15,7 @@ void numberOfYears(int initialNumber, int targetNumber){
 
     }while(currentPopulation < targetNumber);
     // numberOfYearsNeeded = (targetNumber - initialNumber)/netPerYear;
-    printf("Years needed: %d\n", numberOfYearsNeeded);
+    printf("Years: %d\n", numberOfYearsNeeded);
 }
 
 

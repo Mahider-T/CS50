@@ -1,6 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int main(void)
+conts NAME_LENGTH 100;
+
+int main()
 {
-    printf("hello, world\n");
+    char name[NAME_LENGTH];
+
+    printf("What is your name : ");
+    scanf("%99s", name);  
+    printf("Hello, %s!\n", name);
+
+    getchar();
+    return 0;
 }

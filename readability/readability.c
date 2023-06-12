@@ -12,15 +12,16 @@ int main(void)
     // index = 0.0588 * L - 0.296 * S - 15.8
     // L = average number of letters per 100 words
     // S = average number of sentences per 100 words
-    float l, s;
-    int index;
+    float l, s, index;
+    int finalIndex;
     string text = get_string("Text: ");
     int numberOfLetters = count_letters(text);
     int numberOfWords = count_words(text);
     int numberOfSentences = count_sentences(text);
     l = (((float)numberOfLetters/(float)numberOfWords))*(float)100;
     s = (((float)numberOfSentences/(float)numberOfWords))*(float)100;
-    index = round((0.0588 * l) - (0.296 * s) - 15.8);
+    index = (0.0588 * l) - (0.296 * s) - 15.8;
+    finalIndex = round(index);
 
     if(index >= 16){
         printf("Grade 16+");
@@ -29,7 +30,7 @@ int main(void)
         printf("Before Grade 1");
     }
     else{
-        printf("Grade %i", index);
+        printf("Grade %i\n", finalIndex);
     }
 
     printf("%i letters\n", numberOfLetters);

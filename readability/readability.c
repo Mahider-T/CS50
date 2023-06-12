@@ -11,9 +11,11 @@ int main(void)
 int count_letters(string text){
     int lengthOfString = strlen(text);
     int count = 0;
-    
+    char character;
+
     for( int i= 0; i < lengthOfString; i++){
-        if(strcmp(text[i], " ")){
+        bool comparison = compare(text[i], " ");
+        if(comparison){
             continue;
         }
         else{

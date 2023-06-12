@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+#include <math.h>
 int count_letters(string text);
 int count_words(string text);
 int count_sentences(string text);
@@ -11,13 +12,14 @@ int main(void)
     // index = 0.0588 * L - 0.296 * S - 15.8
     // L = average number of letters per 100 words
     // S = average number of sentences per 100 words
-    int l, s;
+    float l, s;
     string text = get_string("Text: ");
     int numberOfLetters = count_letters(text);
     int numberOfWords = count_words(text);
     int numberOfSentences = count_sentences(text);
-    l = (numberOfLetters/numberOfWords)*100;
-    s = (numberOfSentences/numberOfWords)*100;
+    l = ((float)(numberOfLetters/numberOfWords))*(float)100;
+    s = ((float)(numberOfSentences/numberOfWords))*(float)100;
+
     printf("%i letters\n", numberOfLetters);
     printf("%i words\n", numberOfWords);
     printf("%i sentences\n", numberOfSentences);

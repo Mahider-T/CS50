@@ -34,7 +34,7 @@ int main(void)
 int compute_score(string word)
 {
     // TODO: Compute and return score for string
-    string newWord;
+    char newWord[strlen(word)];
     for(int i = 0; i < strlen(word); i++){
         newWord = toupper(word[i]);
     }

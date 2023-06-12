@@ -34,6 +34,15 @@ float calc_hours(int hours[], int weeks, char output)
     }
     average = sum/weeks;
 
-    switch output
+    switch (output){
+        case 'T':
+            return sum;
+            break;
+        case 'A':
+            return average;
+            break;
+        default:
+            printf("Wrong entry\n");
+    }
 
 }

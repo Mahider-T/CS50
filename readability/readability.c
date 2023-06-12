@@ -5,7 +5,7 @@
 int main(void)
 {
     string text = get_string("Text: ");
-    printf("%s\n", text);
+    printf("%i\n", text);
 }
 
 int count_letters(string text){
@@ -15,7 +15,7 @@ int count_letters(string text){
 
     for( int i= 0; i < lengthOfString; i++){
         character = text[i];
-        if(character == " "){
+        if(character == ' '){
             continue;
         }
         else{

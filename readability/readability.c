@@ -18,7 +18,7 @@ int count_letters(string text){
 
     for( int i= 0; i < lengthOfString; i++){
         character = text[i];
-        if(character == ' '){
+        if(character  ){
             continue;
         }
         else{

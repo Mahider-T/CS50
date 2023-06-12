@@ -10,7 +10,7 @@ int main(void)
     string text = get_string("Text: ");
     int numberOfLetters = count_letters(text);
 
-    printf("%i\n", numberOfLetters);
+    printf("%i words\n", numberOfLetters);
 }
 
 int count_letters(string text){
@@ -32,8 +32,12 @@ int count_letters(string text){
 
 int count_words(string text){
     int count;
+    char spaceCheck;
     for( int i = 0; i < strlen(text); i++){
-        
+        spaceCheck = text[i];
+        if(spaceCheck == ' '){
+            count++;
+        }
     }
-    while()
+    return count;
 }

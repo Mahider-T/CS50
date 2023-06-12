@@ -52,13 +52,12 @@ int compute_score(string word)
     int lengthOfWord = strlen(newWord);
     for(int i = 0; i < lengthOfWord; i++){
         positionOfChar = newWord[i] - 65;
-        if(newWord[i] < 65 || newWord[i] > 90){
-            // score += 0;
-            continue;
-        }
-        else{
+        if(newWord[i] >= 65 && newWord[i] <= 90){
             score += POINTS[positionOfChar];
         }
+        // else{
+
+        // }
 
     }
     return score;

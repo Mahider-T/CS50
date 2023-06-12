@@ -56,7 +56,7 @@ int compute_score(string word)
             score += 0;
         }
         else{
-            score += POINTS[positionOfChar];
+            continue;
         }
 
     }

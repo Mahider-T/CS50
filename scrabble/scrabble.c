@@ -34,14 +34,14 @@ int main(void)
 int compute_score(string word)
 {
     // TODO: Compute and return score for string
-    string wordNew = toupper(word);
+    word = toupper(word);
     int score = 0;
     int offsetFromA = 0;
     int positionOfChar;
-    int lengthOfWord = strlen(wordNew);
+    int lengthOfWord = strlen(word);
     for(int i = 0; i < lengthOfWord; i++){
-        positionOfChar = wordNew[i] - 65;
-        if(wordNew[i] < 65 || wordNew[i] > 90 ){
+        positionOfChar = word[i] - 65;
+        if(word[i] < 65 || word[i] > 90 ){
             score += 0;
         }
         else{

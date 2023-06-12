@@ -37,6 +37,9 @@ int compute_score(string word)
     int stringLength = strlen(word);
     char newWord[stringLength];
     for(int i = 0; i < strlen(word); i++){
+        if(!isalpha(word[i])){
+            newWord[i] = word[i];
+        }
         newWord[i] = toupper(word[i]);
     }
     // word = toupper(word);

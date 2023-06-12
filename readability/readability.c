@@ -28,7 +28,7 @@ int main(void)
         printf("Before Grade 1");
     }
     else{
-        printf("Grade %f", index);
+        printf("Grade %i", index);
     }
 
     printf("%i letters\n", numberOfLetters);

@@ -19,12 +19,27 @@ int main(void)
     int score2 = compute_score(word2);
 
     // TODO: Print the winner
+    
+
 }
 
 int compute_score(string word)
 {
     // TODO: Compute and return score for string
+    word = toUpper(word);
     int score = 0;
+    int offsetFromA = 0;
+    int positionOfChar;
     int lengthOfWord = strlen(word);
-    for(int)
+    for(int i = 0; i < lengthOfWord; i++){
+        positionOfChar = word[i] - 65;
+        if(word[i] < 65 || word[i] > 90 ){
+            score += 0;
+        }
+        else{
+            score += POINTS[positionOfChar];
+        }
+
+    }
+    return score;
 }

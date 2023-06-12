@@ -40,6 +40,7 @@ int compute_score(string word)
         if(!isalpha(word[i])){
             newWord[i] = word[i];
         }
+        ese
         newWord[i] = toupper(word[i]);
     }
     // word = toupper(word);

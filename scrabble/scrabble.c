@@ -42,8 +42,8 @@ int compute_score(string word)
             newWord[i] = word[i];
         }
         else{
-        // newWord[i] = toupper(word[i]);
-        continue;
+        newWord[i] = toupper(word[i]);
+
         }
     }
     // word = toupper(word);

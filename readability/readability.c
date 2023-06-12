@@ -12,7 +12,7 @@ int count_letters(string text){
     int lengthOfString = strlen(text);
     int count = 0;
     for( int i= 0; i < lengthOfString; i++){
-        if(text[i] == " "){
+        if(strcmp(text[i], " ")){
             continue;
         }
         else{

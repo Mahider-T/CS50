@@ -55,9 +55,9 @@ int compute_score(string word)
         if(newWord[i] >= 65 && newWord[i] <= 90){
             score += POINTS[positionOfChar];
         }
-        // else{
-
-        // }
+        else{
+            continue;
+        }
 
     }
     return score;

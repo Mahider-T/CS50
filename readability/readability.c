@@ -21,7 +21,15 @@ int main(void)
     s = ((float)(numberOfSentences/numberOfWords))*(float)100;
     index = round(0.0588 * l - 0.296 * s - 15.8);
 
-    if(index)
+    if(index >= 16){
+        printf("Grade 16+");
+    }
+    else if(index < 1){
+        printf("Before Grade 1");
+    }
+    else{
+        printf("Grade %f", index);
+    }
 
     printf("%i letters\n", numberOfLetters);
     printf("%i words\n", numberOfWords);

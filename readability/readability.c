@@ -43,3 +43,15 @@ int count_words(string text){
     return count;
 }
 
+int count_sentences(string text){
+    int count = 1;
+    char sentenceCheck;
+     for( int i = 0; i < strlen(text); i++){
+        sentenceCheck = text[i];
+        if(sentenceCheck == '.' || sentenceCheck == '?' || sentenceCheck == '!' ){
+            count++;
+        }
+    }
+    return count;
+
+}

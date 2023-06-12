@@ -17,8 +17,8 @@ int count_letters(string text){
     char character;
 
     for( int i= 0; i < lengthOfString; i++){
-        character = text[i];
-        if(character  ){
+        character = toupper(text[i]);
+        if(character < 65 || character > 90){
             continue;
         }
         else{

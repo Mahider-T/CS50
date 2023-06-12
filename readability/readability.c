@@ -14,8 +14,8 @@ int count_letters(string text){
     char character;
 
     for( int i= 0; i < lengthOfString; i++){
-        bool comparison = compare(text[i], " ");
-        if(comparison){
+        character = text[i];
+        if(character == " "){
             continue;
         }
         else{

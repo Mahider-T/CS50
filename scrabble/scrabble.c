@@ -34,6 +34,7 @@ int main(void)
 int compute_score(string word)
 {
     // TODO: Compute and return score for string
+    for(int i =)
     // word = toupper(word);
     int score = 0;
     int offsetFromA = 0;

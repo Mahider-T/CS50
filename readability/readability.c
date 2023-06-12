@@ -12,13 +12,16 @@ int main(void)
     // index = 0.0588 * L - 0.296 * S - 15.8
     // L = average number of letters per 100 words
     // S = average number of sentences per 100 words
-    float l, s;
+    float l, s, index;
     string text = get_string("Text: ");
     int numberOfLetters = count_letters(text);
     int numberOfWords = count_words(text);
     int numberOfSentences = count_sentences(text);
     l = ((float)(numberOfLetters/numberOfWords))*(float)100;
     s = ((float)(numberOfSentences/numberOfWords))*(float)100;
+    index = round(0.0588 * l - 0.296 * s - 15.8);
+
+    if(index)
 
     printf("%i letters\n", numberOfLetters);
     printf("%i words\n", numberOfWords);

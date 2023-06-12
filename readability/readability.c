@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
@@ -8,5 +9,15 @@ int main(void)
 }
 
 int count_letters(string text){
-    
+    int lengthOfString = strlen(text);
+    int count = 0;
+    for( int i= 0; i < lengthOfString; i++){
+        if(text[i] == " "){
+            continue;
+        }
+        else{
+            count++;
+        }
+    }
+    return count;
 }

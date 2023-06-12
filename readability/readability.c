@@ -33,9 +33,9 @@ int main(void)
         printf("Grade %i\n", finalIndex);
     }
 
-    printf("%i letters\n", numberOfLetters);
-    printf("%i words\n", numberOfWords);
-    printf("%i sentences\n", numberOfSentences);
+    // printf("%i letters\n", numberOfLetters);
+    // printf("%i words\n", numberOfWords);
+    // printf("%i sentences\n", numberOfSentences);
 
 
 }

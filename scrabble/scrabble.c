@@ -46,7 +46,7 @@ int compute_score(string word)
     int lengthOfWord = strlen(newWord);
     for(int i = 0; i < lengthOfWord; i++){
         positionOfChar = newWord[i] - 65;
-        if(newWord[i] < 65 || newWord[i] > 90 || newWord[i] == 33 || newWord[i] == 46 || newWord[i] == 63 || newWord[i] == 32 || newWord[i] == 58 || newWord[i] == 44 || newWord[i] == 45 || newWord[i] == 95){
+        if(newWord[i] < 65 || newWord[i] > 90){
             score += 0;
         }
         else{

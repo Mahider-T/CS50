@@ -16,10 +16,12 @@ int main(void)
     int numberOfLetters = count_letters(text);
     int numberOfWords = count_words(text);
     int numberOfSentences = count_sentences(text);
+    l = (numberOfLetters/numberOfWords)*100;
+    s = (numberOfSentences/numberOfWords)*100;
     printf("%i letters\n", numberOfLetters);
     printf("%i words\n", numberOfWords);
     printf("%i sentences\n", numberOfSentences);
-    
+
 
 }
 

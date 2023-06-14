@@ -27,7 +27,7 @@ int main(int argc, string argv[])
     char keyArray[26];
     string key = argv[1];
     for(int i = 0; i < 26; i++){
-        if(!isalpha(key[i]){
+        if(!isalpha(key[i])){
             printf("Only letters of the English alphabet are allowed,\n");
             return 1;
         }
@@ -75,7 +75,7 @@ int positionOfCharacter(char array[], char targetCharacter){
 bool has_duplicate(char characters[]){
     for(int i = 0; i < strlen(characters); i++){
         for(int j = 0; j < strlen(characters); j++){
-            if(characters[i] = characters[j]){
+            if(characters[i] == characters[j]){
                 return 1;
             }
             return 0;

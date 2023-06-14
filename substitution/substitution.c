@@ -7,6 +7,10 @@ int positionOfCharacter(char array[], char targetCharacter);
 
 int main(int argc, string argv[])
 {
+    const char alphabetArray[] = {'A', 'B', 'C','D', 'E', 'F','G', 'H', 'I','J', 'K', 'L', 'M', 'N', 'O','P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y/', 'Z'};
+    const string key = argv[1];
+    for(i)
+    transformer(alphabetArray, key, plainText);
 
 }
 

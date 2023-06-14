@@ -36,15 +36,15 @@ int main(int argc, string argv[])
     string plainText = get_string("Plain text:");
     // printf("In main: %lu", strlen(plainText));
     char initialText[strlen(plainText)];
-    for(int i = 0; i < strlen(plainText); i++){
-        initialText[i] = toupper(plainText[i]);
-    }
+    // for(int i = 0; i < strlen(plainText); i++){
+    //     initialText[i] = toupper(plainText[i]);
+    // }
     // for(int i = 0; i < strlen(plainText); i++){
     //     printf("%c", initialText[i]);
     // }
 
 
-    transformer(alphabetArray, keyArray, initialText);
+    transformer(alphabetArray, keyArray, plainText );
 
 }
 
@@ -66,7 +66,7 @@ void transformer(char arrayNormal[],char arrayKey[], string plainText){
     // }
     printf("The length of the string is %i\n",lengthOfString);
     int positionOfChar;
-    for(int i = 0; i < lengthOfString; i++){
+    for(int i = 0; i < strlen(plainText); i++){
         positionOfChar = positionOfCharacter(arrayNormal, plainText[i]);
         printf("%c",arrayKey[positionOfChar]);
     }
@@ -75,7 +75,7 @@ void transformer(char arrayNormal[],char arrayKey[], string plainText){
 
 int positionOfCharacter(char array[], char targetCharacter){
     for(int i = 0; i < 26; i++){
-        if(array[i] == targetCharacter){
+        if(array[i] == toupper(targetCharacter)){
             return i;
         }
     }

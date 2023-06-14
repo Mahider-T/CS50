@@ -52,11 +52,12 @@ int main(int argc, string argv[])
 //Normal array of alphabet A = 1 and Z = 26
 //When the key is entered, put each character into a new array
 void transformer(char arrayNormal[],char arrayKey[], string plainText){
-    string iDontKnow = plainText;
-    printf("%s\n", iDontKnow);
+    // string iDontKnow = plainText;
+    // printf("%s\n", iDontKnow);
     // printf("%c",plainText[0]);
     // int lengthOfString = array_length(plainText);
-    int lengthOfString = strlen(iDontKnow);
+    // int lengthOfString = strlen(plainText);
+    int lengthOfString = sizeof(plainText)/sizeOf(plainText[0]);
     printf("The length of the string is %i\n",lengthOfString);
     int positionOfChar;
     for(int i = 0; i < lengthOfString; i++){

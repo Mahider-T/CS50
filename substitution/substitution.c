@@ -9,4 +9,8 @@ int main(int argc, string argv[])
 //Enter the key
 //Normal array of alphabet A = 1 and Z = 26
 //When the key is entered, put each character into a new array
-char transformer(Array1[])
+char transformer(char arrayNormal[],char arrayKey[], string plainText){
+
+}
+
+int positionOfCharacter()

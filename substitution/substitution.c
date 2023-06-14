@@ -33,13 +33,15 @@ int main(int argc, string argv[])
 //When the key is entered, put each character into a new array
 void transformer(char arrayNormal[],char arrayKey[], string plainText){
     // printf("%s\n", plainText);
+    // printf("%c",plainText[0]);
     int lengthOfString = strlen(plainText);
-    printf("%i\n",lengthOfString);
+    // printf("%i\n",lengthOfString);
     int positionOfChar;
     for(int i = 0; i < lengthOfString; i++){
         positionOfChar = positionOfCharacter(arrayNormal, plainText[i]);
         printf("%c",arrayKey[positionOfChar]);
     }
+    printf("\n");
 }
 
 int positionOfCharacter(char array[], char targetCharacter){

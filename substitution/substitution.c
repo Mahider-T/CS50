@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 void transformer(char arrayNormal[],char arrayKey[], string plainText);
 int positionOfCharacter(char array[], char targetCharacter);
 

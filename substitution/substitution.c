@@ -13,7 +13,7 @@ int main(int argc, string argv[])
     for(int i = 0; i < 26; i++){
         keyArray[i] = key[i];
     }
-    transformer(alphabetArray, keyArray, plainText);
+    transformer(alphabetArray, keyArray, key);
 
 }
 

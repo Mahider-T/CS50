@@ -50,10 +50,11 @@ int main(int argc, string argv[])
 //Enter the key
 //Normal array of alphabet A = 1 and Z = 26
 //When the key is entered, put each character into a new array
-void transformer(char arrayNormal[],char arrayKey[], string plainText){
+void transformer(char arrayNormal[],char arrayKey[], char plainText[]){
     // printf("%s\n", plainText);
     // printf("%c",plainText[0]);
     int lengthOfString = strlen(plainText);
+    // int lengthOfString = array_length(plainText);
     printf("The length of the string is %i\n",lengthOfString);
     int positionOfChar;
     for(int i = 0; i < lengthOfString; i++){

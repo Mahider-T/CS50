@@ -17,7 +17,7 @@ int main(int argc, string argv[])
         printf("Key must contain 26 characters.\n");
         return 1;
     }
-    if(has_duplicate(argv[1])){
+    if(has_duplicate(argv[1]) == 1){
         printf("Duplicates are not allowed!\n");
         return 1;
     }
@@ -75,7 +75,7 @@ int positionOfCharacter(char array[], char targetCharacter){
 bool has_duplicate(char characters[]){
     for(int i = 0; i < strlen(characters); i++){
         for(int j = 0; j < strlen(characters); j++){
-            if(characters[i] == characters[j]){
+            if((characters[i] == characters[j]) && i != j){
                 return 1;
             }
 

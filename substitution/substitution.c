@@ -14,7 +14,7 @@ int main(int argc, string argv[])
         keyArray[i] = key[i];
     }
     string plainText = get_string("Plain text:");
-    transformer(alphabetArray, keyArray, key);
+    transformer(alphabetArray, keyArray, plainText);
 
 }
 

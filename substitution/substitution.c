@@ -13,6 +13,7 @@ int main(int argc, string argv[])
     for(int i = 0; i < 26; i++){
         keyArray[i] = key[i];
     }
+    string plainText = get_string("Plain text:");
     transformer(alphabetArray, keyArray, key);
 
 }

@@ -4,6 +4,7 @@
 #include <ctype.h>
 void transformer(char arrayNormal[],char arrayKey[], string plainText);
 int positionOfCharacter(char array[], char targetCharacter);
+bool has_duplicate(char characters[]);
 
 
 int main(int argc, string argv[])
@@ -16,15 +17,16 @@ int main(int argc, string argv[])
         printf("Key must contain 26 characters.\n");
         return 1;
     }
+    if()
 
 
     char alphabetArray[] = {'A', 'B', 'C','D', 'E', 'F','G', 'H', 'I','J', 'K', 'L', 'M', 'N', 'O','P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
     char keyArray[26];
     string key = argv[1];
     for(int i = 0; i < 26; i++){
-        // if(!isalpha(key[i]){
+        if(!isalpha(key[i]){
 
-        // }
+        }
         keyArray[i] = toupper(key[i]);
     }
     string plainText = get_string("Plain text:");
@@ -64,4 +66,15 @@ int positionOfCharacter(char array[], char targetCharacter){
         }
     }
     return 1;
+}
+
+bool has_duplicate(char characters[]){
+    for(int i = 0; i < strlen(characters); i++){
+        for(int j = 0; j < strlen(characters); j++){
+            if(characters[i] = characters[j]){
+                return 1;
+            }
+            return 0;
+        }
+    }
 }

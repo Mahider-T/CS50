@@ -19,9 +19,9 @@ int main(int argc, string argv[])
     for(int i = 0; i < strlen(plainText); i++){
         initialText[i] = toupper(plainText[i]);
     }
-    // for(int i = 0; i < strlen(plainText); i++){
-    //     printf("%c", initialText[i]);
-    // }
+    for(int i = 0; i < strlen(plainText); i++){
+        printf("%c", initialText[i]);
+    }
 
 
     transformer(alphabetArray, keyArray, initialText);
@@ -32,6 +32,7 @@ int main(int argc, string argv[])
 //Normal array of alphabet A = 1 and Z = 26
 //When the key is entered, put each character into a new array
 void transformer(char arrayNormal[],char arrayKey[], string plainText){
+    printf("%s", plainText);
     int lengthOfString = strlen(plainText);
     int positionOfChar;
     for(int i = 0; i < lengthOfString; i++){

@@ -12,6 +12,9 @@ int main(int argc, string argv[])
         printf("Usage: ./substitution key\n");
         return 1;
     }
+    if(strlen(argv[1] != 26){
+        printf("Key must contain 26 characters.");
+    }
 
 
     char alphabetArray[] = {'A', 'B', 'C','D', 'E', 'F','G', 'H', 'I','J', 'K', 'L', 'M', 'N', 'O','P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
@@ -19,7 +22,7 @@ int main(int argc, string argv[])
     string key = argv[1];
     for(int i = 0; i < 26; i++){
         if(!isalpha(key[i]){
-            
+
         }
         keyArray[i] = toupper(key[i]);
     }

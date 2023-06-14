@@ -51,7 +51,7 @@ int main(int argc, string argv[])
 //Enter the key
 //Normal array of alphabet A = 1 and Z = 26
 //When the key is entered, put each character into a new array
-void transformer(char arrayNormal[],char arrayKey[], char plainText[]){
+void transformer(char arrayNormal[],char arrayKey[], string plainText){
     // printf("%s\n", plainText);
     // printf("%c",plainText[0]);
     // int lengthOfString = array_length(plainText);
@@ -60,7 +60,7 @@ void transformer(char arrayNormal[],char arrayKey[], char plainText[]){
     int positionOfChar;
     for(int i = 0; i < strlen(plainText); i++){
         positionOfChar = positionOfCharacter(arrayNormal, plainText[i]);
-        // printf("%c",arrayKey[positionOfChar]);
+        printf("%c",arrayKey[positionOfChar]);
     }
     printf("\n");
 }

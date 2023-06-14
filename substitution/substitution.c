@@ -28,7 +28,7 @@ int main(int argc, string argv[])
     string key = argv[1];
     for(int i = 0; i < 26; i++){
         if(!isalpha(key[i])){
-            printf("Only letters of the English alphabet are allowed,\n");
+            printf("Only letters of the English alphabet are allowed.\n");
             return 1;
         }
         keyArray[i] = toupper(key[i]);

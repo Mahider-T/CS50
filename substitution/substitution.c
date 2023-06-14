@@ -1,6 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
-#include <
+#include <string.h>
 
 int main(int argc, string argv[])
 {
@@ -11,8 +11,10 @@ int main(int argc, string argv[])
 //Normal array of alphabet A = 1 and Z = 26
 //When the key is entered, put each character into a new array
 char transformer(char arrayNormal[],char arrayKey[], string plainText){
-    for(int i = 0; i < 26; i++){
-
+    int lengthOfString = strlen(plainText);
+    int positionOfChar;
+    for(int i = 0; i < lengthOfString; i++){
+        positionOfChar = positionOfCharacter()
     }
 }
 

@@ -69,7 +69,13 @@ void transformer(char arrayNormal[],char arrayKey[], string plainText){
     printf("ciphertext: ");
     for(int i = 0; i < strlen(plainText); i++){
         positionOfChar = positionOfCharacter(arrayNormal, plainText[i]);
-        printf("%c",arrayKey[positionOfChar]);
+        if(isupper(plainText[i])){
+            printf("%c",arrayKey[positionOfChar]);
+        }
+        else{
+            printf("%c",tolower(arrayKey[positionOfChar]));
+        }
+
     }
     printf("\n");
 }

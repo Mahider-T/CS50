@@ -64,8 +64,9 @@ void transformer(char arrayNormal[],char arrayKey[], string plainText){
     //     count++;
 
     // }
-    printf("The length of the string is %i\n",lengthOfString);
+    // printf("The length of the string is %i\n",lengthOfString);
     int positionOfChar;
+    printf("cipherte")
     for(int i = 0; i < strlen(plainText); i++){
         positionOfChar = positionOfCharacter(arrayNormal, plainText[i]);
         printf("%c",arrayKey[positionOfChar]);

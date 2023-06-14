@@ -17,10 +17,10 @@ int main(int argc, string argv[])
     string plainText = get_string("Plain text:");
     char initialText[strlen(plainText)];
     for(int i = 0; i < strlen(plainText); i++){
-        
+        initialText[i] = toupper(plainText[i]);
     }
 
-    transformer(alphabetArray, keyArray, plainText);
+    transformer(alphabetArray, keyArray, initialText);
 
 }
 

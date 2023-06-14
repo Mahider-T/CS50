@@ -19,6 +19,10 @@ int main(int argc, string argv[])
     for(int i = 0; i < strlen(plainText); i++){
         initialText[i] = toupper(plainText[i]);
     }
+    // for(int i = 0; i < strlen(plainText); i++){
+    //     printf("%c", initialText[i]);
+    // }
+
 
     transformer(alphabetArray, keyArray, initialText);
 

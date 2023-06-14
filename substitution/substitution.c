@@ -8,7 +8,7 @@ int positionOfCharacter(char array[], char targetCharacter);
 int main(int argc, string argv[])
 {
     char keyArray[26];
-    const char alphabetArray[] = {'A', 'B', 'C','D', 'E', 'F','G', 'H', 'I','J', 'K', 'L', 'M', 'N', 'O','P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y/', 'Z'};
+    const char alphabetArray[] = {'A', 'B', 'C','D', 'E', 'F','G', 'H', 'I','J', 'K', 'L', 'M', 'N', 'O','P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
     string key = argv[1];
     for(int i = 0; i < 26; i++){
         keyArray[i] = key[i];

@@ -33,7 +33,7 @@ int main(int argc, string argv[])
         }
         keyArray[i] = toupper(key[i]);
     }
-    string plainText = get_string("Plain text:");
+    string plainText = get_string("plain text: ");
     // printf("In main: %lu", strlen(plainText));
     char initialText[strlen(plainText)];
     // for(int i = 0; i < strlen(plainText); i++){
@@ -66,7 +66,7 @@ void transformer(char arrayNormal[],char arrayKey[], string plainText){
     // }
     // printf("The length of the string is %i\n",lengthOfString);
     int positionOfChar;
-    printf("cipherte")
+    printf("ciphertext: ");
     for(int i = 0; i < strlen(plainText); i++){
         positionOfChar = positionOfCharacter(arrayNormal, plainText[i]);
         printf("%c",arrayKey[positionOfChar]);

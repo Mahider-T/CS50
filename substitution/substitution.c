@@ -47,7 +47,7 @@ void transformer(char arrayNormal[],char arrayKey[], string plainText){
 int positionOfCharacter(char array[], char targetCharacter){
     for(int i = 0; i < 26; i++){
         if(array[i] == targetCharacter){
-            return i-1;
+            return i;
         }
     }
     return 1;

@@ -15,6 +15,11 @@ int main(int argc, string argv[])
         keyArray[i] = toupper(key[i]);
     }
     string plainText = get_string("Plain text:");
+    char initialText[strlen(plainText)];
+    for(int i = 0; i < strlen(plainText); i++){
+        
+    }
+
     transformer(alphabetArray, keyArray, plainText);
 
 }

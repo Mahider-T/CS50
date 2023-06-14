@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <
 
 int main(int argc, string argv[])
 {
@@ -11,7 +12,7 @@ int main(int argc, string argv[])
 //When the key is entered, put each character into a new array
 char transformer(char arrayNormal[],char arrayKey[], string plainText){
     for(int i = 0; i < 26; i++){
-        
+
     }
 }
 

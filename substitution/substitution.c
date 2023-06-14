@@ -11,7 +11,7 @@ int main(int argc, string argv[])
     const char alphabetArray[] = {'A', 'B', 'C','D', 'E', 'F','G', 'H', 'I','J', 'K', 'L', 'M', 'N', 'O','P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y/', 'Z'};
     string key = argv[1];
     for(int i = 0; i < 26; i++){
-        keyArray[i] =
+        keyArray[i] = key[i];
     }
     transformer(alphabetArray, key, plainText);
 

@@ -25,7 +25,7 @@ void transformer(char arrayNormal[],char arrayKey[], string plainText){
     int positionOfChar;
     for(int i = 0; i < lengthOfString; i++){
         positionOfChar = positionOfCharacter(arrayNormal, plainText[i]);
-        printf(arrayKey[positionOfChar]);
+        printf("%c",arrayKey[positionOfChar]);
     }
 }
 

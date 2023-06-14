@@ -12,8 +12,9 @@ int main(int argc, string argv[])
         printf("Usage: ./substitution key\n");
         return 1;
     }
-    if(strlen(argv[1] != 26){
-        printf("Key must contain 26 characters.");
+    if(strlen(argv[1]) != 26){
+        printf("Key must contain 26 characters.\n");
+        return 1;
     }
 
 
@@ -21,9 +22,9 @@ int main(int argc, string argv[])
     char keyArray[26];
     string key = argv[1];
     for(int i = 0; i < 26; i++){
-        if(!isalpha(key[i]){
+        // if(!isalpha(key[i]){
 
-        }
+        // }
         keyArray[i] = toupper(key[i]);
     }
     string plainText = get_string("Plain text:");

@@ -55,15 +55,15 @@ void transformer(char arrayNormal[],char arrayKey[], string plainText){
     // string iDontKnow = plainText;
     // printf("%s\n", iDontKnow);
     // printf("%c",plainText[0]);
-    // int lengthOfString = array_length(plainText);
+    int lengthOfString = array_length(plainText);
     // int lengthOfString = strlen(plainText);
     // int lengthOfString = sizeof(plainText)/sizeOf(plainText[0]);
 
-    int count = 0;
-    for(int i = 0; plainText[i] != '\0'; i++){
-        count++;
+    // int count = 0;
+    // for(int i = 0; plainText[i] != '\0'; i++){
+    //     count++;
 
-    }
+    // }
     printf("The length of the string is %i\n",count);
     int positionOfChar;
     for(int i = 0; i < count; i++){

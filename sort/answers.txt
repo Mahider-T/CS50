@@ -7,10 +7,19 @@ for 10,000 reversed
     user    0m0.216s
     sys     0m0.025s
 
-sort2 uses: TODO
+sort2 uses: Merge sort
 
 How do you know?: TODO
+for 10,000 reversed:
+    real    0m0.090s
+    user    0m0.000s
+    sys     0m0.042s
 
 sort3 uses: TODO
 
 How do you know?: TODO
+
+for 10,000 reversed:
+    real    0m0.192s
+    user    0m0.113s
+    sys     0m0.035s

@@ -2,6 +2,11 @@ sort1 uses: TODO
 
 How do you know?: TODO
 
+for 10,000 reversed
+    real    0m0.299s
+    user    0m0.216s
+    sys     0m0.025s
+
 sort2 uses: TODO
 
 How do you know?: TODO

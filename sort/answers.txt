@@ -1,4 +1,4 @@
-sort1 uses: TODO
+sort1 uses: Bubble sort
 
 How do you know?: TODO
 
@@ -24,7 +24,7 @@ for 10,000 sorted:
     user    0m0.005s
     sys     0m0.036s
 
-sort3 uses: TODO
+sort3 uses: Selection sort
 
 How do you know?: TODO
 

@@ -123,7 +123,7 @@ void record_preferences(int ranks[])
     //because i by definition has better rank (lower index in ranks array) than j
     for (int i = 0; i < candidate_count-1; i++) {
         for( int j = i + 1; j < candidate_count; j++){
-            preferences[i][j] += 1;
+            preferences[ranks[i]][ranks[j]] += 1;
         }
     }
     return;

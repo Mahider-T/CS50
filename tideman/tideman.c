@@ -116,7 +116,13 @@ bool vote(int rank, string name, int ranks[])
 void record_preferences(int ranks[])
 {
     // TODO
-    //for every j in i (nested loop) if 
+    //for every j in i (nested loop) preferences[i][j] is incremented by 1
+    //if if candidate[i] is found at a lower index of array ranks than candidate[j]
+    for (int i = 0; i < candidate_count; i++) {
+        for( int j = 0; j < candidate_count; j++){
+            
+        }
+    }
     return;
 }
 

@@ -136,7 +136,15 @@ void add_pairs(void)
     //if the entry in the array is different from zero,
     //candidate i and j should be inserted into the pairs array
     //where i is the index of the winner and j is the index of the loser
-    
+
+    int pairsIndex = 0;
+    for(int i = 0; i < candidate_count; i++){
+        for(int j = 0; i < candidate_count; j++){
+            if(preferences[i][j] != 0){
+                pairs[pairsIndex].
+            }
+        }
+    }
     return;
 }
 

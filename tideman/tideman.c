@@ -132,6 +132,11 @@ void record_preferences(int ranks[])
 void add_pairs(void)
 {
     // TODO
+    //loop over the 2D array that is preferences and
+    //if the entry in the array is different from zero,
+    //candidate i and j should be inserted into the pairs array
+    //where i is the index of the winner and j is the index of the loser
+    
     return;
 }
 

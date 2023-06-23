@@ -22,7 +22,7 @@ pair;
 string candidates[MAX];
 pair pairs[MAX * (MAX - 1) / 2];
 
-int pair_count;
+int pair_count = 0;
 int candidate_count;
 
 // Function prototypes
@@ -137,13 +137,13 @@ void add_pairs(void)
     //candidate i and j should be inserted into the pairs array
     //where i is the index of the winner and j is the index of the loser
 
-    int pairsIndex = 0;
+    // int pairsIndex = 0;
     for(int i = 0; i < candidate_count; i++){
         for(int j = 0; i < candidate_count; j++){
             if(preferences[i][j] != 0 && preferences[i][j] > preferences[j][i]){
-                pairs[pairsIndex].winner = i;
-                parirs[pairsIndex].loser = j;
-                pairsIndex++;
+                pairs[pair_count].winner = i;
+                parirs[pair_count].loser = j;
+                pair_count++;
             }
         }
     }

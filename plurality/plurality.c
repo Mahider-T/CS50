@@ -51,8 +51,8 @@ int main(int argc, string argv[])
     for (int i = 0; i < voter_count; i++)
     {
         string name = get_string("Vote: ");
-        bool voteValue = vote(name);
-        printf("%s", voteValue);
+        int voteValue = vote(name);
+        printf("%i", voteValue);
 
 
         // Check for invalid vote

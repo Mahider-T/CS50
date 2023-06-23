@@ -51,11 +51,11 @@ int main(int argc, string argv[])
     for (int i = 0; i < voter_count; i++)
     {
         string name = get_string("Vote: ");
-        int voteValue = vote(name);
-        printf("%i", voteValue);
+        // int voteValue = vote(name);
+        // printf("%i", voteValue);
 
 
-        Check for invalid vote
+        // Check for invalid vote
         if (!vote(name))
         {
             printf("Invalid vote.\n");
@@ -84,13 +84,14 @@ void print_winner(void)
 {
     // TODO
     int max = candidates[0].votes;
-    string name = candidates[0].name;
+    string nameOfWinner = candidates[0].name;
 
     for( int i = 1; i < candidate_count; i++){
         if(candidates[i].votes > max){
             max = candidates[i].votes;
-            name = candidates[i].name;
+            nameOfWinner = candidates[i].name;
         }
     }
+    printf("%s\n", nameOfWinner);
     return;
 }

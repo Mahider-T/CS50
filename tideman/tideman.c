@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 // Max number of candidates
 #define MAX 9
@@ -103,7 +104,7 @@ bool vote(int rank, string name, int ranks[])
     //Look up the name in the list of candidates
     //If found in the list of candidates, ranks[j] should contain i where candidates[i] == name
 
-    for(i = 0; i < candidate_count; i++){
+    for(int i = 0; i < candidate_count; i++){
         if(strcmp(name, candidates[i]) == 0){
             ranks[rank] = i;
             return true;
@@ -181,6 +182,7 @@ void sort_pairs(void)
 void lock_pairs(void)
 {
     // TODO
+
     return;
 }
 

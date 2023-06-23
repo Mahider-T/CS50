@@ -164,9 +164,12 @@ void sort_pairs(void)
             if(preferenceValue[j] < preferenceValue[j+1]){
                 temp.winner = pairs[j + 1].winner;
                 temp.loser = pairs[j + 1].loser;
-                
+
                 pairs[j + 1].winner = pairs[j].winner;
                 pairs[j + 1].loser = pairs[j].loser;
+
+                pairs[j + 1].winner = temp.winner;
+                pairs[j + 1].loser = temp.loser;
 
             }
         }

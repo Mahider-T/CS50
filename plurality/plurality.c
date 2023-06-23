@@ -51,13 +51,15 @@ int main(int argc, string argv[])
     for (int i = 0; i < voter_count; i++)
     {
         string name = get_string("Vote: ");
-        vote(name);
+        bool voteValue = vote(name);
+        printf("%s", voteValue);
+
 
         // Check for invalid vote
-        if (!vote(name))
-        {
-            printf("Invalid vote.\n");
-        }
+        // if (!vote(name))
+        // {
+        //     printf("Invalid vote.\n");
+        // }
     }
 
     // Display winner of election

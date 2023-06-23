@@ -117,7 +117,9 @@ void record_preferences(int ranks[])
 {
     // TODO
     //for every j in i (nested loop) preferences[i][j] is incremented by 1
-    //if if candidate[i] is found at a lower index of array ranks than candidate[j]
+    //For all candidates found at a greater index(j) in ranks array than the current one(i)
+    //preferences[i][j] must be incremented by one
+    //because i by definition has better rank (lower index in ranks array) than j
     for (int i = 0; i < candidate_count; i++) {
         for( int j = i + 1; j < candidate_count; j++){
             preferences[i][j] += 1;

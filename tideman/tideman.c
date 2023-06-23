@@ -154,9 +154,9 @@ void add_pairs(void)
 void sort_pairs(void)
 {
     // TODO
-    for(int i = 0; paris[i] != 0; i++){
-        for(int j = i +1; pairs[i] != 0; i++){
-            if(preferences[i][j])
+    for(int i = 0; i < pair_count - 1; i++){
+        for( int j = i + 1; j < pair_count; j++){
+
         }
     }
     return;

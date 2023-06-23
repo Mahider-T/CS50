@@ -100,6 +100,8 @@ int main(int argc, string argv[])
 bool vote(int rank, string name, int ranks[])
 {
     // TODO
+    //Look up the name in the list of candidates
+    //If found in the list of candidates, ranks[]
     return false;
 }
 

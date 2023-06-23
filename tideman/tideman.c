@@ -156,7 +156,7 @@ void sort_pairs(void)
 {
     // TODO
     int preferenceValue[pair_count];
-    pairs temp;
+    pair temp;
     for(int i = 0; i < pair_count; i++){
         preferenceValue[i] = preferences[pairs[i].winner][pairs[i].loser];
     }

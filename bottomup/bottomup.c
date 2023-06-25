@@ -66,7 +66,7 @@ int main(int argc, char *argv[])
     for (int i = 0, biHeight = abs(bi.biHeight); i < biHeight; i++)
     {
         // Iterate over pixels in scanline
-        for (int j = bi.biWidth; j > 0; j--)
+        for (int j = 0; j < bi.biWidth; j++)
         {
             // Temporary storage
             RGBTRIPLE triple;
@@ -82,7 +82,7 @@ int main(int argc, char *argv[])
         fseek(inptr, padding, SEEK_CUR);
 
         // Then add it back (to demonstrate how)
-        for (int k = 0; k < padding; k++)
+        for (int k = padding; k > 0; k--)
         {
             fputc(0x00, outptr);
         }

@@ -75,6 +75,7 @@ int main(int argc, char *argv[])
             fread(&triple, sizeof(RGBTRIPLE), 1, inptr);
 
             // Write RGB triple to outfile
+            
             fwrite(&triple, sizeof(RGBTRIPLE), 1, outptr);
         }
 
@@ -82,7 +83,7 @@ int main(int argc, char *argv[])
         fseek(inptr, padding, SEEK_CUR);
 
         // Then add it back (to demonstrate how)
-        for (int k = padding; k > 0; k--)
+        for (int k = 0; k < padding; k++)
         {
             fputc(0x00, outptr);
         }

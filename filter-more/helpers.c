@@ -71,9 +71,9 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 
             //for pixels that are not edge cases
             if (i > 0 && i < width - 1){
-                   int red;
-                   int green;
-                   int blue;
+                   int red = 0;
+                   int green = 0;
+                   int blue = 0;
                 red += image[i-1][j-1].rgbtRed;
                 green += image[i-1][j-1].rgbtGreen;
                 blue += image[i-1][j-1].rgbtBlue;

@@ -58,6 +58,10 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
+    //There is a maximum of 6 entries to average;
+    //But there are times where not all the 6 entries exist(edge cases)
+    //In these cases just make entry 0 but do not increment the total number
+    //of entries, because it affects the average
     return;
 }
 

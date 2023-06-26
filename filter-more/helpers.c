@@ -64,8 +64,8 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     //of entries, because it affects the average
 
     for ( int i = 0; i < height; i++){
-        RGBTRIPLE neighbou[height][width];
         for ( int j = 0; j < width; j++){
+            RGBTRIPLE neighbors[height][width]; //
 
         }
     }

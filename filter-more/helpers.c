@@ -62,6 +62,13 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     //But there are times where not all the 6 entries exist(edge cases)
     //In these cases just make entry 0 but do not increment the total number
     //of entries, because it affects the average
+
+    for ( int i = 0; i < height; i++){
+        RGBTRIPLE neighbou[height][width];
+        for ( int j = 0; j < width; j++){
+
+        }
+    }
     return;
 }
 

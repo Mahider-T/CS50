@@ -70,7 +70,15 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             int count = 0;
 
             if(i > 0 && i < height && j > 0 && j < width){
-                
+                neighbor[1] = image[i-1][j-1];
+                neighbor[1] = image[i-1][j-1];
+                neighbor[1] = image[i-1][j-1];
+                neighbor[1] = image[i-1][j-1];
+                neighbor[1] = image[i-1][j-1];
+                neighbor[1] = image[i-1][j-1];
+                neighbor[1] = image[i-1][j-1];
+                neighbor[1] = image[i-1][j-1];
+                neighbor[1] = image[i-1][j-1];
             }
 
         }

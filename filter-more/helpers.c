@@ -70,7 +70,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             // int count = 0;
 
             //for pixels that are not edge cases
-            if (i > 0 && i < width - 1){
+            if (j > 0 && j < width - 1 && i > 0 && i < height){
                    int red = 0;
                    int green = 0;
                    int blue = 0;
@@ -110,9 +110,9 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                 green += image[i+1][j+1].rgbtGreen;
                 blue += image[i+1][j+1].rgbtBlue;
 
-                image[i][j].rgbtRed = round(red/3.0);
-                image[i][j].rgbtGreen = round(green/3.0);
-                image[i][j].rgbtBlue = round(blue/3.0);
+                image[i][j].rgbtRed = red/3.0;
+                image[i][j].rgbtGreen = green/3.0;
+                image[i][j].rgbtBlue = blue/3.0;
 
             }
         }

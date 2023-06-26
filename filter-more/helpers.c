@@ -7,7 +7,6 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
         for ( int j = 0; j < width; j++){
             // int red;int green; int blue; int average;
             // char *redc; char *greenc; char *bluec;
-
             // red = strtol(image[i][j].rgbtRed, &redc ,16);
             // green = strtol(image[i][j].rgbtGreen, &greenc ,16);
             // blue = strtol(image[i][j].rgbtBlue, &bluec ,16);
@@ -29,6 +28,7 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 // Reflect image horizontally
 void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
+    
     return;
 }
 

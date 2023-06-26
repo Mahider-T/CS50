@@ -34,6 +34,7 @@ int main(int argc, char *argv[])
         printf("Could not create %s.\n", outfile);
         return 3;
     }
+    // fseek(outptr, 0, SEEK_END);
 
     // Read infile's BITMAPFILEHEADER
     BITMAPFILEHEADER bf;
@@ -63,10 +64,11 @@ int main(int argc, char *argv[])
     int padding = (4 - (bi.biWidth * sizeof(RGBTRIPLE)) % 4) % 4;
 
     // Iterate over infile's scanlines
-    for (int i = 0, int biHeight = abs(bi.biHeight); i < biHeight ; i++)
+    fseek(inptr, 0, SEEK_END);
+    for (int i = 0,biHeight = abs(bi.biHeight); i < biHeight ; i++)
     {
         // Iterate over pixels in scanline
-        for (int j = bi.biWidth; j > 0 ; j--)
+        for (int j = 0 ; j < bi.biWidth ; j++)
         {
             // Temporary storage
             RGBTRIPLE triple;
@@ -75,9 +77,19 @@ int main(int argc, char *argv[])
             fread(&triple, sizeof(RGBTRIPLE), 1, inptr);
 
             // Write RGB triple to outfile
-
             fwrite(&triple, sizeof(RGBTRIPLE), 1, outptr);
+
+
         }
+         char c = getchar();
+            while (c != ' ') {
+                // Move the cursor one character to the left.
+                ungetc(c, stdin);
+                i++;
+
+                // Get the next character.
+                c = getchar();
+            }
 
         // Skip over padding, if any
         fseek(inptr, padding, SEEK_CUR);

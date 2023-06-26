@@ -6,11 +6,11 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
     for ( int i = 0; i < height; i++){
         for ( int j = 0; j < width; j++){
             int red;int green; int blue;
-            char *endptr;
+            char *red; char *green; char *blue;
 
-             red = strtol(image[i][j].rgbtRed, ,16);
-             green = strtol(image[i][j].rgbtGreen);
-             blue = image[i][j].rgbtBlue;
+             red = strtol(image[i][j].rgbtRed,&red,16);
+             green = strtol(image[i][j].rgbtGreen,&green,16);
+             blue = strtol(image[i][j].rgbtBlue,,16);
 
 
 

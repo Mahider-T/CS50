@@ -67,14 +67,15 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
         for ( int j = 0; j < width; j++){
             RGBTRIPLE neighbors[9]; //declared in this scope because
                                     //neighbor for each pixel is different
-            int count = 0;
+            // int count = 0;
             int red;
             int green;
             int blue;
 
             //for pixels that are not edge cases
             if (i > 0 && i < width - 1){
-                    
+                red += image[i-1][j-1];
+                
             }
         }
     }

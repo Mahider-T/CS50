@@ -22,9 +22,6 @@ int main(int argc, char *argv[])
 
     while (fread(block, 512, 1, file) == 512)
     {
-        for(int i = 0; i < 512; i++){
-            block[i] = 
-        }
 
     }
 

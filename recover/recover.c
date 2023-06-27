@@ -4,8 +4,7 @@
 int main(int argc, char *argv[])
 {
     typedef uint8_t BYTE;
-    char block[512];
-
+    unit8_t block[512];
 
     if( argc != 2){
         printf("usage ./recover image\n");
@@ -21,9 +20,11 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    while (fread(&block, 512, 1, file) == 512)
+    while (fread(block, 512, 1, file) == 512)
     {
-        if(block[1] == 0xff )
+        for(int i = 0; i < 512; i++){
+            block[i] = 
+        }
 
     }
 

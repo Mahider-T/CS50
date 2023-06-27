@@ -38,10 +38,9 @@ int main(int argc, char *argv[])
             fwrite(block, 1, 512, fileWrite);
 
             if(count != 1 && count != 0){
-                char fileBefore[9];
-                sprintf(fileBefore, "%03i.jpg",count-2);
-
-                // fclose(fileBefore);
+                // char fileBefore[9];
+                // sprintf(fileBefore, "%03i.jpg",count-2);
+                fclose(fileWrite);
             }
             printf("Start of an Image %i\n", count);
 

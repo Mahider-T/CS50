@@ -30,8 +30,13 @@ int main(int argc, char *argv[])
             // printf("%i ", count);
             // count++;
             started = 1;
-            char buffer[8];
-            sprintf(buffer, "%3i")
+            char fileNow[8];
+            char fileBefor[8];
+            sprintf(fileNow, "%03i",count);
+
+            if(count != 0){
+                
+            }
             count++;
             printf("Start of an Image %i\n", count);
 

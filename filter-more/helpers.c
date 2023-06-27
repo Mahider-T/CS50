@@ -1,4 +1,5 @@
 #include "helpers.h"
+#include <stdio.h>
 #include <math.h>
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
@@ -63,58 +64,44 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     //In these cases just make entry 0 but do not increment the total number
     //of entries, because it affects the average
 
+    RGBTRIPLE newPixels[height][width];
+
     for ( int i = 0; i < height; i++){
         for ( int j = 0; j < width; j++){
-            RGBTRIPLE neighbors[9]; //declared in this scope because
+            // RGBTRIPLE neighbors[9]; //declared in this scope because
                                     //neighbor for each pixel is different
-            // int count = 0;
 
-            //for pixels that are not edge cases
-            int red = 0x00;
-            int green = 0x00;
-            int blue = 0x00;
-            if (j > 0 && j < width - 1 && i > 0 && i < height){
-                red += image[i-1][j-1].rgbtRed;
-                green += image[i-1][j-1].rgbtGreen;
-                blue += image[i-1][j-1].rgbtBlue;
+            int red = 0;
+            int green = 0;
+            int blue = 0;
 
-                red += image[i-1][j].rgbtRed;
-                green += image[i-1][j].rgbtGreen;
-                blue += image[i-1][j].rgbtBlue;
+            float count = 0;
 
-                red += image[i-1][j+1].rgbtRed;
-                green += image[i-1][j+1].rgbtGreen;
-                blue += image[i-1][j+1].rgbtBlue;
-
-                red += image[i][j-1].rgbtRed;
-                green += image[i][j-1].rgbtGreen;
-                blue += image[i][j-1].rgbtBlue;
-
-                red += image[i][j].rgbtRed;
-                green += image[i][j].rgbtGreen;
-                blue += image[i][j].rgbtBlue;
-
-                red += image[i][j+1].rgbtRed;
-                green += image[i][j+1].rgbtGreen;
-                blue += image[i][j+1].rgbtBlue;
-
-                red += image[i+1][j-1].rgbtRed;
-                green += image[i+1][j-1].rgbtGreen;
-                blue += image[i+1][j-1].rgbtBlue;
-
-                red += image[i+1][j].rgbtRed;
-                green += image[i+1][j].rgbtGreen;
-                blue += image[i+1][j].rgbtBlue;
-
-                red += image[i+1][j+1].rgbtRed;
-                green += image[i+1][j+1].rgbtGreen;
-                blue += image[i+1][j+1].rgbtBlue;
-
-                image[i][j].rgbtRed = red/3.0;
-                image[i][j].rgbtGreen = green/3.0;
-                image[i][j].rgbtBlue = blue/3.0;
-
+            for(int k = -1; k <= 1; k++){
+                for( int l = -1; l <= 1; l++ ){
+                    if((i+k) >= 0 && (i+k) < height && (j+l) >= 0 && (j+l) < width){
+                        // neighbors[count] = image[i][j];
+                        // count++;
+                        red += image[i+k][j+l].rgbtRed;
+                        green += image[i+k][j+l].rgbtGreen;
+                        blue += image[i+k][j+l].rgbtBlue;
+                        count++;
+                    }
+                }
             }
+
+            newPixels[i][j].rgbtRed = round(red/count);
+            newPixels[i][j].rgbtGreen = round(green/count);
+            newPixels[i][j].rgbtBlue = round(blue/count);
+            // printf("%i\n",count);
+        }
+    }
+
+    for ( int i = 0; i < height; i++){
+        for ( int j = 0; j < width; j++){
+            image[i][j].rgbtRed = newPixels[i][j].rgbtRed;
+            image[i][j].rgbtGreen = newPixels[i][j].rgbtGreen;
+            image[i][j].rgbtBlue = newPixels[i][j].rgbtBlue;
         }
     }
     return;

@@ -30,9 +30,12 @@ int main(int argc, char *argv[])
             // printf("%i ", count);
             // count++;
             started = 1;
+            char buffer[8];
+            sprintf(buffer, "%3i")
             count++;
             printf("Start of an Image %i\n", count);
-            
+
+
         }
         else{
             if(started == 1){

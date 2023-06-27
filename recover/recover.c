@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
     {
         int count = 0;
         if(block[0] = "0xff" && block[1] = "0xd8" && block[2] = "0xff" && (buffer[3] & 0xf0 == 0xe0)){
-            fopen()
+            string = sprintf()
         }
     }
 

@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
 
 int main(int argc, char *argv[])
 {
     typedef uint8_t BYTE;
-    unit8_t block[512];
+    BYTE block[512];
 
     if( argc != 2){
         printf("usage ./recover image\n");

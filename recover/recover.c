@@ -32,19 +32,22 @@ int main(int argc, char *argv[])
             // fwrite(&block, 512, 1, img);
             // count++;
             if(count != 0){
-                char fileToBeClosed[8] = sprintf(filename, "%03.i.jpg", count-1);
+                char fileToBeClosed[8];
+                sprintf(fileToBeClosed, "%03.i.jpg", count-1);
                 fclose(fileToBeClosed);
                 count++;
             }
 
 
-            char filename[8] = sprintf(filename, "%03.i.jpg", count);
+            char filename[8];
+            sprintf(filename, "%03.i.jpg", count);
             FILE *img = fopen(filename, "w");
             fwrite(&block, 512, 1, img);
             printf("\n%i\n",count);
         }
         else if(started == 1){
-            char filename[8] = sprintf(filename, "%03.i.jpg", count);
+            char filename[8];
+            sprintf(filename, "%03.i.jpg", count);
             FILE *img = fopen(filename, "w");
             fwrite(&block, 512, 1, img);
         }

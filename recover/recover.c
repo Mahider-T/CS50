@@ -31,17 +31,22 @@ int main(int argc, char *argv[])
             // FILE *img = fopen("one.jpg", "w");
             // fwrite(&block, 512, 1, img);
             // count++;
-            if(count != 0);
-            fclose()
+            if(count != 0){
+                string fileToBeClosed = sprintf(filename, "%03.i.jpg", count-1);
+                fclose(fileToBeClosed);
+                count++;
+            }
+
 
             string filename = sprintf(filename, "%03.i.jpg", count);
             FILE *img = fopen(filename, "w");
             fwrite(&block, 512, 1, img);
             printf("\n%i\n",count);
-            count++;
         }
         else if(started == 1){
-
+            string filename = sprintf(filename, "%03.i.jpg", count);
+            FILE *img = fopen(filename, "w");
+            fwrite(&block, 512, 1, img);
         }
         // printf("%i\n",count);
     }

@@ -31,8 +31,11 @@ int main(int argc, char *argv[])
             // FILE *img = fopen("one.jpg", "w");
             // fwrite(&block, 512, 1, img);
             // count++;
-            printf("%i\n",count);
+            printf("\n%i\n",count);
             count++;
+        }
+        else{
+            printf("cow  ");
         }
         // printf("%i\n",count);
     }

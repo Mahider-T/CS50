@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
             // FILE *img = fopen("one.jpg", "w");
             // fwrite(&block, 512, 1, img);
             // count++;
-            printf("%i",count);
+            // printf("%i",count);
             count++;
         }
         // printf("%i\n",count);

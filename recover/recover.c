@@ -24,6 +24,7 @@ int main(int argc, char *argv[])
 
         int count = 0;
         int started = 0;
+        FILE *fileWrite;
     while (fread(block, 1, 512, file) == 512)
     {
         if(block[0] == 0xff && block[1] == 0xd8 && block[2] == 0xff /*&& (block[3] & 0xf0) == 0xe0*/){
@@ -33,7 +34,7 @@ int main(int argc, char *argv[])
             count++;
             char fileNow[9];
             sprintf(fileNow, "%03i.jpg",count-1);
-            FILE *fileWrite = fopen(fileNow, "w");
+            fileWrite = fopen(fileNow, "w");
             fwrite(block, 1, 512, fileWrite);
 
             if(count != 1 && count != 0){
@@ -51,7 +52,7 @@ int main(int argc, char *argv[])
                 printf("Remaining of the image %i\n ", count);
                  char fileNow[9];
                  sprintf(fileNow, "%03i.jpg",count-1);
-                 FILE *fileWrite = fopen(fileNow, "a");
+                //  FILE *fileWrite = fopen(fileNow, "a");
                  fwrite(block, 1, 512, fileWrite);
             }
         }

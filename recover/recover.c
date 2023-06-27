@@ -4,7 +4,7 @@
 int main(int argc, char *argv[])
 {
     typedef uint8_t BYTE;
-    long *block;
+    char block[512];
 
 
     if( argc != 2){
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 
     while (fread(&block, 512, 1, file) == 512)
     {
-        if()
+        if(block[1] == 0xff )
 
     }
 

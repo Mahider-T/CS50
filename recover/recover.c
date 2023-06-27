@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    while (fread(block, 512, 1, file) == 512)
+    while (fread(block, 1, 512, file) == 512)
     {
         int count = 0;
         int started = 0;
@@ -30,10 +30,10 @@ int main(int argc, char *argv[])
             // FILE *img = fopen("one.jpg", "w");
             // fwrite(&block, 512, 1, img);
             // count++;
-            // printf("%i",count);
+            printf("%i",count);
             count++;
         }
-        printf("%i\n",count);
+        // printf("%i\n",count);
     }
 
 }

@@ -3,6 +3,8 @@
 
 int main(int argc, char *argv[])
 {
+    typedef uint8_t BYTE;
+    
     if( argc != 2){
         printf("usage ./recover image\n");
         return 1;
@@ -16,5 +18,12 @@ int main(int argc, char *argv[])
         printf("Could not open %s.\n", argv[1]);
         return 1;
     }
+
+    while (fread(buffer, 1, BLOCK_SIZE, raw_file) == BLOCK_SIZE)
+    {
+
+
+    }
+
 
 }

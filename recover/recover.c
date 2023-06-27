@@ -30,15 +30,16 @@ int main(int argc, char *argv[])
             // printf("%i ", count);
             // count++;
             started = 1;
-            char fileNow[8];
-            sprintf(fileNow, "%03i",count);
-
-            if(count != 0){
-                char fileBefore[8];
-                sprintf(fileBefore, "%03i",count);
-                fclose(filebefore);
-            }
             count++;
+            char fileNow[9];
+            sprintf(fileNow, "%03i",count-1);
+            FILE *file = fopen()
+
+            if(count != 1 && count != 0){
+                char fileBefore[9];
+                sprintf(fileBefore, "%03i",count-2);
+                fclose(fileBefore);
+            }
             printf("Start of an Image %i\n", count);
 
 

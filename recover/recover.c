@@ -33,7 +33,8 @@ int main(int argc, char *argv[])
             count++;
             char fileNow[9];
             sprintf(fileNow, "%03i",count-1);
-            FILE *file = fopen()
+            FILE *fileWrite = fopen(fileNow, "w");
+            fwrite(block, 1, 512, fileWrite);
 
             if(count != 1 && count != 0){
                 char fileBefore[9];
@@ -47,6 +48,10 @@ int main(int argc, char *argv[])
         else{
             if(started == 1){
                 printf("Remaining of the image %i\n ", count);
+                 char fileNow[9];
+                 sprintf(fileNow, "%03i",count-1);
+                 FILE *fileWrite = fopen(fileNow, "a");
+                 fwrite(block, 1, 512, fileWrite);
             }
         }
 

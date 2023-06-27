@@ -29,7 +29,14 @@ int main(int argc, char *argv[])
         if(block[0] == 0xff && block[1] == 0xd8 && block[2] == 0xff /*&& (block[3] & 0xf0) == 0xe0*/){
             // printf("%i ", count);
             // count++;
-            
+            started = 1;
+            printf("Start of an Image\n");
+            count++;
+        }
+        else{
+            if(started == 1){
+                printf("Remaining of the image %i\n ", count);
+            }
         }
 
     }

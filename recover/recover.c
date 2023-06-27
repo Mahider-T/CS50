@@ -5,6 +5,7 @@ int main(int argc, char *argv[])
 {
     typedef uint8_t BYTE;
     long block[512];
+    
 
     if( argc != 2){
         printf("usage ./recover image\n");

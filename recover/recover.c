@@ -20,9 +20,9 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    while (fread(block, 512, 1, file) == 512)
+    while (fread(&block, 512, 1, file) == 512)
     {
-
+        if()
     }
 
 

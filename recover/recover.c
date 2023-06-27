@@ -39,6 +39,7 @@ int main(int argc, char *argv[])
             if(count != 1 && count != 0){
                 char fileBefore[9];
                 sprintf(fileBefore, "%03i",count-2);
+                
                 fclose(fileBefore);
             }
             printf("Start of an Image %i\n", count);

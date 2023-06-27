@@ -7,4 +7,7 @@ int main(int argc, char *argv[])
         printf("usage ./recover image");;
         return 1;
     }
+
+    FILE *file = fopen(argv[1], "r");
+    
 }

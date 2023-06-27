@@ -34,15 +34,15 @@ int main(int argc, char *argv[])
             count++;
             char fileNow[9];
             sprintf(fileNow, "%03i.jpg",count-1);
-            fileWrite = fopen(fileNow, "w");
-            fwrite(block, 1, 512, fileWrite);
-
             if(count != 1 && count != 0){
                 // char fileBefore[9];
                 // sprintf(fileBefore, "%03i.jpg",count-2);
                 fclose(fileWrite);
             }
-            printf("Start of an Image %i\n", count);
+            fileWrite = fopen(fileNow, "w");
+            fwrite(block, 1, 512, fileWrite);
+
+            printf("Start of an Image %i\n", count);//Debug
 
 
         }

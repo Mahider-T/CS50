@@ -31,11 +31,11 @@ int main(int argc, char *argv[])
             // count++;
             started = 1;
             char fileNow[8];
-            char fileBefor[8];
             sprintf(fileNow, "%03i",count);
 
             if(count != 0){
-                
+                char fileBefore[8];
+                sprintf(fileNow, "%03i",count);
             }
             count++;
             printf("Start of an Image %i\n", count);

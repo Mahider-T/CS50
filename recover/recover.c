@@ -31,11 +31,15 @@ int main(int argc, char *argv[])
             // FILE *img = fopen("one.jpg", "w");
             // fwrite(&block, 512, 1, img);
             // count++;
+            started = 1;
+            string filename = sprintf(filename, "%03.i.jpg", count);
+            FILE *img = fopen(filename, "w");
+            fwrite(&block, 512, 1, img);
             printf("\n%i\n",count);
             count++;
         }
-        else{
-            printf("cow  ");
+        else if(started == 1){
+            
         }
         // printf("%i\n",count);
     }

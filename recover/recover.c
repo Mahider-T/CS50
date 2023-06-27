@@ -27,31 +27,10 @@ int main(int argc, char *argv[])
     while (fread(block, 1, 512, file) == 512)
     {
         if(block[0] == 0xff && block[1] == 0xd8 && block[2] == 0xff /*&& (block[3] & 0xf0) == 0xe0*/){
-            // sprintf(filename, "%03.i.jpg", count);
-            // FILE *img = fopen("one.jpg", "w");
-            // fwrite(&block, 512, 1, img);
+            // printf("%i ", count);
             // count++;
-            if(count != 0){
-                char fileToBeClosed[8];
-                sprintf(fileToBeClosed, "%03.i.jpg", count-1);
-                fclose(fileToBeClosed);
-                count++;
-            }
-
-
-            char filename[8];
-            sprintf(filename, "%03.i.jpg", count);
-            FILE *img = fopen(filename, "w");
-            fwrite(&block, 512, 1, img);
-            printf("\n%i\n",count);
+            
         }
-        else if(started == 1){
-            char filename[8];
-            sprintf(filename, "%03.i.jpg", count);
-            FILE *img = fopen(filename, "w");
-            fwrite(&block, 512, 1, img);
-        }
-        // printf("%i\n",count);
+
     }
-
 }

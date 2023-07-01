@@ -81,9 +81,10 @@ person *create_family(int generations)
     }
 
     // TODO: Return newly created person
+    person *current = currPerson;
     if(currPerson != NULL){
-        // free(temp);
-        return currPerson;
+        // return currPerson;
+        return current;
     }
     return NULL;
 }

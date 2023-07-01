@@ -82,6 +82,7 @@ person *create_family(int generations)
 
     // TODO: Return newly created person
     if(currPerson != NULL){
+        // free(currPerson);
         return currPerson;
     }
     return NULL;

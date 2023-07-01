@@ -82,8 +82,7 @@ person *create_family(int generations)
 
     // TODO: Return newly created person
     if(currPerson != NULL){
-        // return currPerson;
-        return current;
+        return currPerson;
     }
     return NULL;
 }
@@ -96,13 +95,12 @@ void free_family(person *p)
     // TODO: Free parents recursively
 
     // TODO: Free child
-    if(p->parents[0] == NULL){
-        free(p);
+    if(p == NULL){
+        return;
     }
-    else{
-        free(p->parents[0]);
-        free(p->parents[1]);
-    }
+    free(p->parents[0]);
+    free(p->parents[1]);
+    free(p);
 
 }
 

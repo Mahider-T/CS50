@@ -80,6 +80,7 @@ person *create_family(int generations)
     if(currPerson != NULL){
         return currPerson;
     }
+    free(currPerson);
     return NULL;
 }
 

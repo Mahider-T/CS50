@@ -21,6 +21,8 @@ void print_family(person *p, int generation);
 void free_family(person *p);
 char random_allele();
 
+person *temp;
+
 int main(void)
 {
     // Seed random number generator
@@ -41,6 +43,8 @@ person *create_family(int generations)
 {
     // TODO: Allocate memory for new person
     person *currPerson = malloc(sizeof(person));
+    temp = currPerson;
+
 
     // If there are still generations left to create
     if (generations > 1)
@@ -78,6 +82,7 @@ person *create_family(int generations)
 
     // TODO: Return newly created person
     if(currPerson != NULL){
+        // free(temp);
         return currPerson;
     }
     return NULL;

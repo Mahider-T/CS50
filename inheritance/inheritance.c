@@ -57,7 +57,7 @@ person *create_family(int generations)
         // int p1 = rand() % 3;
         // int p2 = rand() % 3;
 
-        currPerson->alleles[0] = currPerson->parents[1]->alleles[rand() % 2];
+        currPerson->alleles[0] = currPerson->parents[0]->alleles[rand() % 2];
         currPerson->alleles[1] = currPerson->parents[1]->alleles[rand() % 2];
 
 

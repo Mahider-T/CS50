@@ -102,6 +102,17 @@ void free_family(person *p)
     // }
     // free(p->parents[0]);
     // free(p->parents[1]);
+        if (p == NULL)
+    {
+        return;
+    }
+
+    // Free parents recursively
+    free_family(p->parents[0]);
+    free_family(p->parents[1]);
+
+    // Free child
+    free(p);
 
 }
 

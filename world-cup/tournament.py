@@ -50,6 +50,15 @@ def simulate_round(teams):
 def simulate_tournament(teams):
     """Simulate a tournament. Return name of winning team."""
     # TODO
+    #read the teams from the csv
+    #put the teams in a dictionary
+    #put the dictionary in teams
+
+    #call the simulate_round function on winners of each round
+    #until the number of team reduces to 1
+
+    #When the remaining number of teams is 1,
+    #increment the count of that team
 
 
 if __name__ == "__main__":

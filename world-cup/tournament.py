@@ -17,7 +17,7 @@ def main():
     teams = []
     # TODO: Read teams into memory from file
     for i in teams:
-        print(teams[i][team])
+        print(teams[i][tea])
 
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts

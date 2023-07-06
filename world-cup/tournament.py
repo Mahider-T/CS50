@@ -16,6 +16,8 @@ def main():
 
     teams = []
     # TODO: Read teams into memory from file
+    for i in teams:
+        print(teams[i])
 
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
@@ -60,8 +62,10 @@ def simulate_tournament(teams):
         # smallTeam[]
         for row in reader:
             team = {
-                
+                "team": row[0],
+                "rating" : int(row[1])
             }
+            teams.append(team)
 
     #call the simulate_round function on winners of each round
     #until the number of team reduces to 1

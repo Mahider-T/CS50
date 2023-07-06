@@ -54,13 +54,16 @@ def simulate_tournament(teams):
     #put the teams in a dictionary
     #put the dictionary in teams
 
+    with open(argv[1], "a") as file:
+        
+
     #call the simulate_round function on winners of each round
     #until the number of team reduces to 1
 
     #When the remaining number of teams is 1,
     #increment the count of that team(the number of times that team has won a tournament)
 
-    
+
 
 
 if __name__ == "__main__":

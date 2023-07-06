@@ -56,6 +56,10 @@ def simulate_tournament(teams):
 
     with open(argv[1], 'r') as file:
         reader = csv.reader(file)
+        next(reader)
+        smallTeam[]
+        for row in reader:
+            row.append
 
     #call the simulate_round function on winners of each round
     #until the number of team reduces to 1

@@ -66,10 +66,10 @@ def simulate_tournament(teams):
     #put the teams in a dictionary
     #put the dictionary in teams
 
-    # winner = []
-    # while(len(teams) >1){
-    #     winner[] = simulate_round(teams)
-    # }
+    winner = simulate_round(teams)
+    while(len(winner) > 1){
+        winner = simulate_round(winner)
+    }
 
     #call the simulate_round function on winners of each round
     #until the number of team reduces to 1

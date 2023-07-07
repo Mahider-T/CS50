@@ -13,4 +13,6 @@ Which predictions, if any, proved incorrect as you increased the number of simul
 the top and the bottom seem to have changed dramatically while the middle ones remained more or less the same
 
 Suppose you're charged a fee for each second of compute time your program uses.
-After how many simulations would you call the predictions "good enough"?: after 10000 simulations
+After how many simulations would you call the predictions "good enough"?:
+
+It seems like the predictions stabilized after about...10000 simulations

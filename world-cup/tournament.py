@@ -25,9 +25,9 @@ def main():
                 "rating" : row[1]
             }
             teams.append(team)
-    for i in range(len(teams)):
-        print(teams[i]['team'], end = " ")
-        print(teams[i]['rating'])
+    # for i in range(len(teams)):
+    #     print(teams[i]['team'], end = " ")
+    #     print(teams[i]['rating'])
 
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
@@ -36,6 +36,9 @@ def main():
         next(reader)
         for row in reader:
             counts[row[0]] = 0
+
+    for i in range(N):
+        simulate_toutnament(teams)
     # Print each team's chances of winning, according to simulation
     for team in sorted(counts, key=lambda team: counts[team], reverse=True):
         print(f"{team}: {counts[team] * 100 / N:.1f}% chance of winning")

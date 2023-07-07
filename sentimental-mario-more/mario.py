@@ -7,7 +7,7 @@ def main():
         height = get_int("Height: ")
 
     for i in range(height, 0, -1):
-        for j in range(height):
+        for j in range(height,height,1):
             if(i >= j):
                 print("#", end = "")
         print()

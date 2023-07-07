@@ -36,7 +36,7 @@ def main():
         next(reader)
         for row in reader:
             counts[row[0]] = int(0)
-    print(counts)
+    # print(counts)
 
     for i in range(N):
         winnerIs = simulate_tournament(teams)

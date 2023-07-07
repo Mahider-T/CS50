@@ -38,7 +38,7 @@ def main():
             counts[row[0]] = int(0)
     # print(counts)
 
-    for i in range(N):
+    for i in range(5):
         winnerIs = simulate_tournament(teams)
         # counts[winnerIs] += 1
     # Print each team's chances of winning, according to simulation

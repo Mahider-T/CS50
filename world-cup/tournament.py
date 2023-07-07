@@ -75,20 +75,18 @@ def simulate_tournament(teams):
     #put the teams in a dictionary
     #put the dictionary in teams
 
-    winner = simulate_round(teams)
-    while(len(winner) > 1):
-       winner = simulate_round(winner)
-    # counts[winner[0]] += 1
-    return winner[0]
-
-
     #call the simulate_round function on winners of each round
     #until the number of team reduces to 1
 
     #When the remaining number of teams is 1,
     #increment the count of that team(the number of times that team has won a tournament)
 
-
+    winner = simulate_round(teams)
+    while(len(winner) > 1):
+       winner = simulate_round(winner)
+    # counts[winner[0]] += 1
+    print(winner[0])
+    return winner[0]
 
 
 if __name__ == "__main__":

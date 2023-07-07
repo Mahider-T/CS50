@@ -86,7 +86,7 @@ def simulate_tournament(teams):
        print(winner)
        winner = simulate_round(winner)
     # counts[winner[0]] += 1
-    return winner[0]
+    return winner[0]['team']
 
 
 if __name__ == "__main__":

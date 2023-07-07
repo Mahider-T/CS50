@@ -8,7 +8,9 @@ def main():
 
     for i in range(height, 0, -1):
         for j in range(height):
-            if()
+            if(i >= j):
+                print("#", end = "")
+        print()
 
     for i in range(height, 0, -1):
         for j in range(height, 0, -1):

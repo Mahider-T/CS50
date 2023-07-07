@@ -76,7 +76,7 @@ def simulate_tournament(teams):
     winner = simulate_round(teams)
     while(len(winner) > 1):
        winner = simulate_round(winner)
-    counts[winner[0]] += 1
+    # counts[winner[0]] += 1
     return winner[0]
 
 

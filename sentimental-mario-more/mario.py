@@ -1,4 +1,5 @@
 # TODO
+from CS50 import get_int
 def main():
     height = int(input("Height: "))
 

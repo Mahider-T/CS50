@@ -15,4 +15,4 @@ with a small number of simulations the bottom countries were predicted wrong
 Suppose you're charged a fee for each second of compute time your program uses.
 After how many simulations would you call the predictions "good enough"?:
 
-It seems like the predictions stabilized after about 100000 simulations
+It seems like the predictions stabilized after about 10000 simulations

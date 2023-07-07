@@ -66,7 +66,10 @@ def simulate_tournament(teams):
                 "rating" : int(row[1])
             }
             teams.append(team)
-    while(teams)
+
+    while(len(teams) >1){
+        teams[] = simulate_round(teams)
+    }
 
     #call the simulate_round function on winners of each round
     #until the number of team reduces to 1

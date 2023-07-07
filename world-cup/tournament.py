@@ -35,7 +35,8 @@ def main():
         reader = csv.reader(file)
         next(reader)
         for row in reader:
-            row[0]: 0
+            counts[row[0]] = 0
+            print(counts)
     # Print each team's chances of winning, according to simulation
     for team in sorted(counts, key=lambda team: counts[team], reverse=True):
         print(f"{team}: {counts[team] * 100 / N:.1f}% chance of winning")

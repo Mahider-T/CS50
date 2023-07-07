@@ -35,7 +35,7 @@ def main():
         reader = csv.reader(file)
         next(reader)
         for row in reader:
-            counts[row[0]] = 0
+            counts[row[0]] = int(0)
 
     for i in range(N):
         winnerIs = simulate_tournament(teams)

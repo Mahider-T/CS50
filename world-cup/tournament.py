@@ -27,7 +27,7 @@ def main():
             }
             teams.append(team)
     for i in teams:
-        print(teams[i])
+        print(teams[i]["team"])
         # print(teams[i][rating], end = " ")
 
     counts = {}

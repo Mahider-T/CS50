@@ -1,8 +1,8 @@
 # TODO
-from CS50 import get_int
+from cs50 import get_int
 def main():
-    height = int(input("Height: "))
-
+    height = get_int("Height: ")
+    while()
 
 
 if __name__ == "__main__":

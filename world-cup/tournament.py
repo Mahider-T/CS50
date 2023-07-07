@@ -16,8 +16,19 @@ def main():
 
     teams = []
     # TODO: Read teams into memory from file
+    with open(argv[1], 'r') as file:
+        reader = csv.reader(file)
+        # next(reader)
+        # smallTeam[]
+        for row in reader:
+            team = {
+                "team": row[0],
+                "rating" : int(row[1])
+            }
+            teams.append(team)
     for i in teams:
-        print(teams[i][team])
+        print(teams[i][team], end = " ")
+        print(teams[i][rating], end = " ")
 
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
@@ -56,20 +67,10 @@ def simulate_tournament(teams):
     #put the teams in a dictionary
     #put the dictionary in teams
 
-    with open(argv[1], 'r') as file:
-        reader = csv.reader(file)
-        next(reader)
-        # smallTeam[]
-        for row in reader:
-            team = {
-                "team": row[0],
-                "rating" : int(row[1])
-            }
-            teams.append(team)
-    winner = []
-    while(len(teams) >1){
-        winner[] = simulate_round(teams)
-    }
+    # winner = []
+    # while(len(teams) >1){
+    #     winner[] = simulate_round(teams)
+    # }
 
     #call the simulate_round function on winners of each round
     #until the number of team reduces to 1

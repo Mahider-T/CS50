@@ -10,7 +10,7 @@ Times:
 Questions:
 
 Which predictions, if any, proved incorrect as you increased the number of simulations?:
-with a small number of simulations the top and the bottom seem to have changed dramatically while the middle ones remained more or less the same
+with a small number of simulations the bottom countries were predicted wrong
 
 Suppose you're charged a fee for each second of compute time your program uses.
 After how many simulations would you call the predictions "good enough"?:

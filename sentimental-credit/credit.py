@@ -3,7 +3,6 @@ from cs50 import get_int, get_string
 import sys
 def getDigitSum(number):
     sum = 0
-    digits = []
     value = str(number)
     for numbers in value:
         sum += int(numbers)

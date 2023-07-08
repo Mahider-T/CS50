@@ -45,7 +45,7 @@ def main():
     # string = str(card)
     if isValidCreditCard(card) != True:
         print("INVALID")
-        # sys.exit()
+        sys.exit()
     for numbers in card:
         empty.append(int(numbers))
 

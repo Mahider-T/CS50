@@ -30,7 +30,7 @@ def isValidCreditCard(number):
             sum += getDigitSum(new)
 
         count += 1
-    # return sum
+    print(sum)
     if(sum % 10 == 0):
         return True
     # return False

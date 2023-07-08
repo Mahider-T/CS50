@@ -18,10 +18,11 @@ def isValidCreditCard(number):
     for digit in range(len(empty), -1, -1):
         if(count %2 == 0):
             sum += empty[digit]
-        else:
-            sum += 2*empty[digit]
+        # else:
+        #     sum += 2*empty[digit]
+        count += 1
 
-    if(not (sum % 10)):
+    if(sum % 10 == 0):
         return True
     return False
 

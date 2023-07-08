@@ -17,11 +17,11 @@ def main():
         for j in range(height):
             if(i >= j and j == 0):
                 print("  #", end = "")
-            elif(i >= j):
+            elif(i > j):
                 print("#", end = "")
-            else:
-                # print(" ", end = "")
-                print()
+            elif(i == j):
+                print("#")
+        print()
 
 
 

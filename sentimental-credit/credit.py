@@ -40,10 +40,16 @@ def isValidCreditCard(number):
 
 def main():
     card = get_string("Enter the credit card number: ")
+    empty = []
+    # print(empty)
+    # string = str(card)
+    for numbers in card:
+        empty.append(int(card))
+
     if isValidCreditCard(card) != True:
         print("INVALID")
         # sys.exit()
-    if card(len) == 15 and card[0] == "3" and  card[1] == "4" or card[1] == "5" or card[1] == "7" or card[1] == "8":
+    if empty(len) == 15 and empty[0] == 3 and  empty[1] == 4 or empty[1] == 5 or empty[1] == 7 or empty[1] == 8:
         print("AMEX")
 
 

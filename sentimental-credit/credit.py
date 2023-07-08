@@ -11,7 +11,12 @@ def isValidCreditCard(number):
     string = str(number)
     for numbers in string:
         empty.append(int(numbers))
-    
+    if(len(empty) != 13 or len(empty) != 15 or len(empty) != 16 ):
+        return False
+    sum = 0
+    for digit in range(len(empty), -1, -1):
+        if
+
     # print(empty)
 
 # def getCardType():

@@ -21,8 +21,10 @@ def isValidCreditCard(number):
         else:
             sum += 2*empty[digit]
 
-    if(sum % 10):
-        
+    if(not (sum % 10)):
+        return True
+    return False
+
 
     # print(empty)
 
@@ -30,7 +32,7 @@ def isValidCreditCard(number):
 
 def main():
     card = get_string("Enter the credit card number: ")
-    isValidCreditCard(card)
+    print(isValidCreditCard(card))
 
 
 

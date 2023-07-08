@@ -1,5 +1,5 @@
 # TODO
-from cs50 import get_int
+from cs50 import get_int, get_string
 def getDigitSum(number):
     sum = 0
     while(number > 0):
@@ -9,14 +9,17 @@ def getDigitSum(number):
 def isValidCreditCard(number):
     empty = []
     string = str(number)
-    for(numbers in string):
+    for numbers in string:
         empty.append(int(numbers))
-    print(empty)
+    
+    # print(empty)
 
-def getCardType():
+# def getCardType():
 
 def main():
-    card = get_int("Enter the credit card number: ")
+    card = get_string("Enter the credit card number: ")
+    isValidCreditCard(card)
+
 
 
 

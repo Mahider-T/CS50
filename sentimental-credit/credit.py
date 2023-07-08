@@ -3,7 +3,7 @@ from cs50 import get_int, get_string
 def getDigitSum(number):
     sum = 0
     while(number > 0):
-        sum += number % 10
+        sum += int(number % 10)
         number /= 10
     return sum
 def isValidCreditCard(number):
@@ -24,22 +24,25 @@ def isValidCreditCard(number):
         if count % 2 == 0:
             sum += empty[digit]
         else:
-            print(empty[digit])
+            # print(empty[digit])
             new = 2 * empty[digit]
-            sum += getDigitSum(new)
+            # sum += getDigitSum(new)
 
         count += 1
-    return sum
-    # if(sum % 10 == 0):
-    #     return True
-    # return False
+    # return sum
+    if(sum % 10 == 0):
+        return True
+    return False
 
 
 # def getCardType():
 
 def main():
     card = get_string("Enter the credit card number: ")
-    print(isValidCreditCard(card))
+    if isValidCreditCard(card) != True:
+        print("INVALID")
+    
+
 
 
 

@@ -11,10 +11,14 @@ def isValidCreditCard(number):
     string = str(number)
     for(numbers in string):
         empty.append(int(numbers))
-    
+    print(empty)
+
 def getCardType():
 
 def main():
     card = get_int("Enter the credit card number: ")
 
 
+
+if __name__ == "__main__":
+    main()

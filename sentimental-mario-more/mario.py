@@ -12,15 +12,18 @@ def main():
                 print("#", end = "")
             else:
                 print(" ", end = "")
-        print()
+            # print(f"{i}, {j}")
 
-    for i in range(height, 0, -1):
-        for j in range(height, 0, -1):
-            if(i <= j):
+        for j in range(height):
+            if(i >= j and j == 0):
+                print("  #", end = "")
+            elif(i >= j):
                 print("#", end = "")
             else:
                 print(" ", end = "")
         print()
+
+
 
 if __name__ == "__main__":
     main()

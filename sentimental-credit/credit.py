@@ -49,6 +49,7 @@ def main():
     empty = []
     # print(empty)
     # string = str(card)
+    print(isValidCreditCard(card))
     if isValidCreditCard(card) != True:
         print("INVALID")
         sys.exit()

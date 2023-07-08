@@ -20,15 +20,16 @@ def isValidCreditCard(number):
     sum = 0
     count = 0
     for digit in range(len(empty) - 1, -1, -1):
-        if(count % 2 == 0):
-            sum += empty[digit]
-        else:
-            sum += 2*empty[digit]
-        count += 1
-
-    if(sum % 10 == 0):
-        return True
-    return False
+        print(digit)
+    #     if(count % 2 == 0):
+    #         sum += empty[digit]
+    #     else:
+    #         sum += 2*empty[digit]
+    #     count += 1
+    # return sum
+    # if(sum % 10 == 0):
+    #     return True
+    # return False
 
 
 # def getCardType():

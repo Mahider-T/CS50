@@ -3,10 +3,16 @@ from cs50 import get_int, get_string
 import sys
 def getDigitSum(number):
     sum = 0
-    while(number > 0):
-        sum += int(number % 10)
-        number /= 10
+    digits = []
+    value = str(number)
+    for i in range(len(value)):
+        sum += int(i)
     return sum
+    # for
+    # while(number > 0):
+    #     sum += int(number % 10)
+    #     number /= 10
+    # return sum
 def isValidCreditCard(number):
     empty = []
     # print(empty)

@@ -61,7 +61,7 @@ def main():
         print("AMEX")
     if len(empty) == 13 or len(empty) == 16 and (empty[0] == 4):
         print("VISA")
-    if len(empty) == 16 and empty[0] == 5 and (empty[1] == 1 or empty[1] == 6) :
+    if len(empty) == 16 and empty[0] == 5 and (empty[1] == 1 or empty[1] == 5) :
         print("MASTERCARD")
 
 

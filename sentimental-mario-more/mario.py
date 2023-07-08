@@ -20,8 +20,8 @@ def main():
             elif(i >= j):
                 print("#", end = "")
             else:
-                print(" ", end = "")
-        print()
+                # print(" ", end = "")
+                print()
 
 
 

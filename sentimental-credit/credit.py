@@ -7,4 +7,4 @@ def getCardType():
 def main():
     card = get_int("Enter the credit card number: ")
 
-    
+

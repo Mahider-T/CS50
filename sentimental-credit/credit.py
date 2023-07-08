@@ -14,7 +14,7 @@ def isValidCreditCard(number):
         empty.append(int(numbers))
     print(empty)
     print(len(empty))
-    if(len(empty) != 13 or len(empty) != 15 or len(empty) != 16 ):
+    if len(empty) != 13 or len(empty) != 15 or len(empty) != 16:
         return False
     sum = 0
     count = 0

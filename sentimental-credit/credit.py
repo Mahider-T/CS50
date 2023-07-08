@@ -42,8 +42,9 @@ def main():
     card = get_string("Enter the credit card number: ")
     if isValidCreditCard(card) != True:
         print("INVALID")
-        sys.exit()
-    if card(len) == 15 and 
+        # sys.exit()
+    if card(len) == 15 and card[0] == "3" and  card[1] == "4" or card[1] == "5" or card[1] == "7" or card[1] == "8":
+        print("AMEX")
 
 
 

@@ -36,10 +36,10 @@ def isValidCreditCard(number):
             sum += getDigitSum(new)
 
         count += 1
-    print(sum)
+    # print(sum)
     if(sum % 10 == 0):
         return True
-    # return False
+    return False
 
 
 # def getCardType():

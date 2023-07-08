@@ -4,6 +4,8 @@ import sys
 def getDigitSum(number):
     sum = 0
     value = str(number)
+    if len(value) == 1:
+        return number
     for numbers in value:
         sum += int(numbers)
     return sum

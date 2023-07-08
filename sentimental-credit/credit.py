@@ -49,7 +49,7 @@ def main():
     if isValidCreditCard(card) != True:
         print("INVALID")
         # sys.exit()
-    if empty(len) == 15 and empty[0] == 3 and  empty[1] == 4 or empty[1] == 5 or empty[1] == 7 or empty[1] == 8:
+    if len(empty) == 15 and empty[0] == 3 and  empty[1] == 4 or empty[1] == 5 or empty[1] == 7 or empty[1] == 8:
         print("AMEX")
 
 

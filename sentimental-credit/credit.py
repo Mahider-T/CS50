@@ -5,8 +5,8 @@ def getDigitSum(number):
     sum = 0
     digits = []
     value = str(number)
-    for i in range(len(value)):
-        sum += int(i)
+    for numbers in value:
+        sum += int(numbers)
     return sum
     # for
     # while(number > 0):

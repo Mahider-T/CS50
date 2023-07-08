@@ -43,7 +43,7 @@ def main():
     if isValidCreditCard(card) != True:
         print("INVALID")
         sys.exit()
-    if card(len) == 
+    if card(len) == 15 and 
 
 
 

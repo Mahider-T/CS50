@@ -51,10 +51,10 @@ def main():
 
     if len(empty) == 15 and empty[0] == 3 and  (empty[1] == 4 or empty[1] == 5 or empty[1] == 7 or empty[1] == 8):
         print("AMEX")
-    if len(empty) == 16 and empty[0] == 5 and (empty[1] == 1 or empty[1] == 6) :
-        print("MASTERCARD")
-    if len(empty) == 13 or len(empty) == 16 and (empty[0] == 4 or empty[0] == 5):
+    elif (len(empty) == 13 or len(empty) == 16) and empty[0] == 4:
         print("VISA")
+    else:
+        print("MASTERCARD")
 
 
 if __name__ == "__main__":

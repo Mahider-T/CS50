@@ -33,7 +33,7 @@ def isValidCreditCard(number):
     # return sum
     if(sum % 10 == 0):
         return True
-    return False
+    # return False
 
 
 # def getCardType():

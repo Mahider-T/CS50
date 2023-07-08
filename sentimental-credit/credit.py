@@ -1,5 +1,6 @@
 # TODO
 from cs50 import get_int, get_string
+import sys
 def getDigitSum(number):
     sum = 0
     while(number > 0):
@@ -41,7 +42,8 @@ def main():
     card = get_string("Enter the credit card number: ")
     if isValidCreditCard(card) != True:
         print("INVALID")
-    
+        sys.exit()
+
 
 
 

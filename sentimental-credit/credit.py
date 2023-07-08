@@ -8,9 +8,12 @@ def getDigitSum(number):
     return sum
 def isValidCreditCard(number):
     empty = []
+    print(empty)
     string = str(number)
     for numbers in string:
         empty.append(int(numbers))
+    print(empty)
+    print(len(empty))
     if(len(empty) != 13 or len(empty) != 15 or len(empty) != 16 ):
         return False
     sum = 0
@@ -20,15 +23,13 @@ def isValidCreditCard(number):
             sum += empty[digit]
         # else:
         #     sum += 2*empty[digit]
-        count += 1
-    return sum
+    #     count += 1
+    # return sum
 
     # if(sum % 10 == 0):
     #     return True
     # return False
 
-
-    # print(empty)
 
 # def getCardType():
 

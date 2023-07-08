@@ -26,10 +26,10 @@ def isValidCreditCard(number):
         else:
             sum += 2*empty[digit]
         count += 1
-    # return sum
-    if(sum % 10 == 0):
-        return True
-    return False
+    return sum
+    # if(sum % 10 == 0):
+    #     return True
+    # return False
 
 
 # def getCardType():

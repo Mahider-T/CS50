@@ -23,6 +23,7 @@ def isValidCreditCard(number):
         # print(digit)
         if(count % 2 == 0):
             sum += empty[digit]
+            print(empty[digit])
         else:
             sum += 2*empty[digit]
         count += 1

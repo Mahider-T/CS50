@@ -39,13 +39,13 @@ def level(text):
         return "Grade 16+"
     elif index < 1:
         return "Before Grade 1"
-    else
+    else:
         return "Grade " + finalIndex
 
 
 def main():
-    string = get()
-    print(level("What is"))
+    string = get_string("Text: ")
+    print(level(string))
 
 if __name__ == "__main__":
     main()

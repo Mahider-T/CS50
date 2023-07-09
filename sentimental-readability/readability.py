@@ -2,7 +2,7 @@
 from cs50 import get_string
 
 def count_sentences(text):
-    count = 1
+    count = 0
     for i in text:
         if i == '.' or i == '?' or i == '!':
             count += 1

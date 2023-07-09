@@ -31,17 +31,14 @@ def level(text):
     l = float(numberOfLetters)/float(numberOfWords)*float(100)
     s = float(numberOfSentences)/float(numberOfWords)*float(100)
     index = (0.0588 * l) - (0.296 * s) - 15.8
-    finalIndex = round(index);
+    finalIndex = round(index)
 
-    if index >= 16){
-        printf("Grade 16+");
-    }
-    else if(index < 1){
-        printf("Before Grade 1");
-    }
-    else{
-        printf("Grade %i\n", finalIndex);
-    }
+    if index >= 16:
+        return "Grade 16+"
+    elif index < 1:
+        return "Before Grade 1"
+    else
+        return "Grade " + finalIndex
 
 
 def main():

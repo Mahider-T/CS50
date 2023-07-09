@@ -1,4 +1,6 @@
 # TODO
+from cs50 import get_string
+
 def count_sentences(text):
     count = 1
     for i in text:
@@ -42,7 +44,8 @@ def level(text):
 
 
 def main():
-    print(count_letters("What is"))
+    string = get()
+    print(level("What is"))
 
 if __name__ == "__main__":
     main()

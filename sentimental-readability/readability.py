@@ -8,5 +8,5 @@ def numberOfSentences(text):
 def main():
     print(numberOfSentences("What is your name? My nane is Mahider, How about you? bro!"))
 
-if __name__ == "main":
+if __name__ == "__main__":
     main()

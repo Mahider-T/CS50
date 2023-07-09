@@ -14,10 +14,14 @@ def count_words(text):
     return count
 
 def count_letters(text):
+    count = 0
     for i in text:
-        
+        if i.isalpha() == True:
+            count += 1
+    return count
+
 def main():
-    print(count_words("What is"))
+    print(count_letters("What is"))
 
 if __name__ == "__main__":
     main()

@@ -40,7 +40,7 @@ def level(text):
     elif index < 1:
         return "Before Grade 1"
     else:
-        return "Grade " + finalIndex
+        return "Grade " + str(finalIndex)
 
 
 def main():

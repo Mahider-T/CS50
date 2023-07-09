@@ -20,15 +20,29 @@ def count_letters(text):
             count += 1
     return count
 
-    # l = (((float)numberOfLetters/(float)numberOfWords))*(float)100;
-    # s = (((float)numberOfSentences/(float)numberOfWords))*(float)100;
-    # index = (0.0588 * l) - (0.296 * s) - 15.8;
-    # finalIndex = round(index);
+
+
+
 def level(text):
     numberOfLetters = count_letters(text)
     numberOfWords = count_words(text)
     numberOfSentences = count_sentences(text)
-    
+
+    l = float(numberOfLetters)/float(numberOfWords)*float(100)
+    s = float(numberOfSentences)/float(numberOfWords)*float(100)
+    index = (0.0588 * l) - (0.296 * s) - 15.8
+    finalIndex = round(index);
+
+    if index >= 16){
+        printf("Grade 16+");
+    }
+    else if(index < 1){
+        printf("Before Grade 1");
+    }
+    else{
+        printf("Grade %i\n", finalIndex);
+    }
+
 
 def main():
     print(count_letters("What is"))

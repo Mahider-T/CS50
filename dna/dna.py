@@ -47,12 +47,12 @@ def main():
             else:
                 isMatch = 0
                 continue
-            print(database[i][header[j]], end = " ")
-            print(target[j - 1])
-    if isMatch == 1:
-        print(database[i]['name'])
-        sys.exit(0)
-    print("no match")
+            # print(database[i][header[j]], end = " ")
+            # print(target[j - 1])
+        if isMatch == 1:
+            print(database[i]['name'])
+            sys.exit(0)
+    print("No match")
     return
 
 

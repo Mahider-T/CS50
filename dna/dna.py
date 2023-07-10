@@ -46,6 +46,7 @@ def main():
                 isMatch = 1
             else:
                 isMatch = 0
+                continue
             print(database[i][header[j]], end = " ")
             print(target[j - 1])
     if isMatch == 1:

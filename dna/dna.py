@@ -5,8 +5,11 @@ import sys
 def main():
 
     # TODO: Check for command-line usage
-    
+    if len(sys.argv) != 3:
+        print("Incorrect number of arguments, 2 are needed!")
+
     # TODO: Read database file into a variable
+    
 
     # TODO: Read DNA sequence file into a variable
 

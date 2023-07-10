@@ -9,9 +9,28 @@ def main():
         print("Incorrect number of arguments, 2 are needed!")
 
     # TODO: Read database file into a variable
-    
+    header = [] #the colum headers and len(header) == number of columns
+    database = [] #Info about all the people in the database
+    with open(sys.argv[1], "r") as csv_file:
+        csv_reader = csv.reader(csv_file)
+        for row in csv_reader:
+            for i in range(len(row)):
+                header.append(row[i])
+            break
+        # next(csv_reader)
+        for row in csv_reader:
+            person = {}
+            for i in range(len(header)):
+                person[header[i]] = row[i]
+            database.append(person)
+    # for i in database:
+    #     print(i)
 
     # TODO: Read DNA sequence file into a variable
+    string = " "
+    with open(sys.argv[2], 'r') as f:
+        string = f.read()
+    # print(string)
 
     # TODO: Find longest match of each STR in DNA sequence
 

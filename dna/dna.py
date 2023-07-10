@@ -33,8 +33,25 @@ def main():
     # print(string)
 
     # TODO: Find longest match of each STR in DNA sequence
+    target = []
+    for i in range(1,len(header)):
+        target.append(longest_match(string,header[i]))
+    # print(target)
 
     # TODO: Check database for matching profiles
+        for i in range(len(database)):
+        isMatch = 0
+        for j in range(1, len(header)):
+            if int(database[i][header[j]]) == target[j - 1]:
+                isMatch = 1
+            else:
+                isMatch = 0
+            # print(database[i][header[j]], end = " ")
+            # print(target[j - 1])
+        if isMatch == 1:
+            print(database[i]['name'])
+            sys.exit(0)
+    print("no match")
 
     return
 

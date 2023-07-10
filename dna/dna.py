@@ -40,21 +40,19 @@ def main():
 
     # TODO: Check database for matching profiles
     for i in range(len(database)):
-        isMatch = []
+        isMatch = 0
         for j in range(1, len(header)):
             if int(database[i][header[j]]) == target[j - 1]:
-                isMatch.append(1)
+                isMatch = isMatch and 1
             else:
-                isMatch.append(0)
-                continue
+                isMatch = isMatch and 0
             # print(database[i][header[j]], end = " ")
             # print(target[j - 1])
-        if 0 in isMatch:
-            print("No match")
-            return
-        # sys.exit(0)
-    print(database[i]['name'])
-
+        if isMatch == 1:
+            print(database[i]['name'])
+            sys.exit(0)
+    print("No match")
+    return
 
 
 def longest_match(sequence, subsequence):

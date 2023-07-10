@@ -36,7 +36,7 @@ def main():
     target = []
     for i in range(1,len(header)):
         target.append(longest_match(string,header[i]))
-    print(target)
+    # print(target)
 
     # TODO: Check database for matching profiles
     for i in range(len(database)):
@@ -46,8 +46,8 @@ def main():
                 isMatch = 1
             else:
                 isMatch = 0
-        # print(database[i][header[j]], end = " ")
-        # print(target[j - 1])
+        print(database[i][header[j]], end = " ")
+        print(target[j - 1])
     if isMatch == 1:
         print(database[i]['name'])
         sys.exit(0)

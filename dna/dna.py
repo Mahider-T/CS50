@@ -40,7 +40,7 @@ def main():
 
     # TODO: Check database for matching profiles
     for i in range(len(database)):
-        isMatch = 0
+        isMatch = 1
         for j in range(1, len(header)):
             if int(database[i][header[j]]) == target[j - 1]:
                 isMatch = isMatch and 1

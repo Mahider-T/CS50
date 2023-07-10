@@ -46,8 +46,8 @@ def main():
                 isMatch = 1
             else:
                 isMatch = 0
-        print(database[i][header[j]], end = " ")
-        print(target[j - 1])
+            print(database[i][header[j]], end = " ")
+            print(target[j - 1])
     if isMatch == 1:
         print(database[i]['name'])
         sys.exit(0)

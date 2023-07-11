@@ -99,7 +99,7 @@ ND minute <= 25);
 | Bruce   |
 +---------+
 
-Common for the above two: Bruce, Diana, Iman, Luca, 
+
 --suspects based on phone call
 SELECT people.name, caller, receiver  FROM phone_calls, people  WHERE caller = phone_number AND year = 2021 AND month = 07 AND day = 28 AND duration < 60;
 +---------+----------------+----------------+

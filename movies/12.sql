@@ -1,1 +1,1 @@
-SELECT movies.title FROM movies, stars, people WHERE movies.id = stars.movie_id AND stars.person_id = people.id AND people.name = "Adam Sandler" AND people.name = "Jennifer Lawrence";
+SELECT movies.title FROM movies, stars, people WHERE movies.id = stars.movie_id AND stars.person_id = people.id AND people.name = "Bradley Cooper" AND people.name = "Jennifer Lawrence";

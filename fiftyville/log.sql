@@ -66,7 +66,7 @@ SELECT hour, minute, origin_airport_id, destination_airport_id, full_name FROM f
 | 12   | 15     | 8                 | 11                     | San Francisco International Airport |
 | 15   | 20     | 8                 | 9                      | Tokyo International Airport         |
 | 16   | 0      | 8                 | 6                      | Logan International Airport         |
-+------+--------+-------------------+------------------------+-------------------------------------+
++------+--------+-------------------+------------------------+-------------------------------------+'
 
 
 --suspects based on account number
@@ -83,6 +83,20 @@ SELECT people.name FROM bank_accounts, people WHERE person_id = id AND account_n
 | Taylor  |
 | Benista |
 +---------+
+--suspect accomplice
++------------+----------------+----------------+
+|    name    |     caller     |    receiver    |
++------------+----------------+----------------+
+| Jack       | (130) 555-0289 | (996) 555-8899 |
+| Larry      | (499) 555-9472 | (892) 555-8872 |
+| Robin      | (367) 555-5533 | (375) 555-8161 |
+| Melissa    | (499) 555-9472 | (717) 555-1342 |
+| James      | (286) 555-6063 | (676) 555-6554 |
+| Philip     | (770) 555-1861 | (725) 555-3243 |
+| Jacqueline | (031) 555-6622 | (910) 555-3251 |
+| Doris      | (826) 555-1652 | (066) 555-9701 |
+| Anna       | (338) 555-6650 | (704) 555-2131 |
++------------+----------------+----------------+ 
 --suspects based on licese plate
 SELECT people.name FROM people WHERE license_plate IN (SELECT license_plate FROM bakery_security_logs WHERE year = 2021 AND month = 07 AND day = 28 AND hour = 10 AND minute >= 15 A
 ND minute <= 25);
@@ -113,20 +127,6 @@ SELECT people.name, caller, receiver  FROM phone_calls, people  WHERE caller = p
 | Diana   | (770) 555-1861 | (725) 555-3243 |
 | Carina  | (031) 555-6622 | (910) 555-3251 |
 | Kenny   | (826) 555-1652 | (066) 555-9701 |
-| Benista | (338) 555-6650 | (704) 555-2131 |
+| Benista | (338) 555-6650 | (704) 555-2131 |  common: Sofia, Diana, Kelsey, Bruce
 +---------+----------------+----------------+
 
---suspect accomplice
-+------------+----------------+----------------+
-|    name    |     caller     |    receiver    |
-+------------+----------------+----------------+
-| Jack       | (130) 555-0289 | (996) 555-8899 |
-| Larry      | (499) 555-9472 | (892) 555-8872 |
-| Robin      | (367) 555-5533 | (375) 555-8161 |
-| Melissa    | (499) 555-9472 | (717) 555-1342 |
-| James      | (286) 555-6063 | (676) 555-6554 |
-| Philip     | (770) 555-1861 | (725) 555-3243 |
-| Jacqueline | (031) 555-6622 | (910) 555-3251 |
-| Doris      | (826) 555-1652 | (066) 555-9701 |
-| Anna       | (338) 555-6650 | (704) 555-2131 |
-+------------+----------------+----------------+

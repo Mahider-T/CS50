@@ -160,4 +160,11 @@ sqlite> SELECT people.name FROM people, passengers, flights WHERE passengers.fli
 | Kenny  |
 | Luca   |
 +--------+
-Therfore, the suspect is Bruce, Accomplice is Philip and 
+Therfore, the suspect is Bruce, Accomplice is Philip
+--Destination City
+sqlite> SELECT city FROM airports WHERE full_name = "LaGuardia Airport";
++---------------+
+|     city      |
++---------------+
+| New York City |
++---------------+

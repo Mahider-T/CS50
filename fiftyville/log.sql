@@ -25,17 +25,14 @@ SELECT transcript, id FROM interviews WHERE year = 2021 AND month = 07 AND day =
 --Suspect license plate at the given time
 SELECT license_plate, activity, minute FROM bakery_security_logs WHERE year = 2021 AND month = 07 AND day = 28 AND hour = 10;
 -- license_plate | activity | minute |
---+---------------+----------+--------+
---| R3G7486       | entrance | 8      |
---| 13FNH73       | entrance | 14     |
---| 5P2BI95       | exit     | 16     | => primary suspect
---| 94KL13X       | exit     | 18     | => secondary suspect
---| 6P58WS2       | exit     | 18     | => Tertiary suspect
+
+--| 5P2BI95       | exit     | 16     |
+--| 94KL13X       | exit     | 18     |
+--| 6P58WS2       | exit     | 18     |
 --| 4328GD8       | exit     | 19     |
 --| G412CB7       | exit     | 20     |
 --| L93JTIZ       | exit     | 21     |
 --| 322W7JE       | exit     | 23     |
 --| 0NTHK55       | exit     | 23     |
---| 1106N58       | exit     | 35
 
 

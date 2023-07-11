@@ -1,1 +1,1 @@
-SELECT movies.title FROM movies, stars, people WHERE movies.id = stars.movie_id AND stars.person_id = people.id AND people.name = "Bradley Cooper"AND movies.title FROM movies, stars, people WHERE movies.id = stars.movie_id AND stars.person_id = people.id AND people.name = "Jennifer Lawrence";
+SELECT movies.title FROM movies INNER JOIN stars ON movies.id = stars.movie_id INNER JOIN people ON stars.person_id = people.id WHERE people.name = 'Bradley Cooper' AND people.name = 'Jennifer Lawrence';

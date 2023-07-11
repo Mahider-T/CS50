@@ -35,4 +35,13 @@ SELECT license_plate, activity, minute FROM bakery_security_logs WHERE year = 20
 --| 322W7JE       | exit     | 23     | => 2
 --| 0NTHK55       | exit     | 23     | => 3
 
-
+--Get the account number of the theif based on the interview transcript
+SELECT atm_location, transaction_type, account_number amount FROM atm_transactions WHERE year = 2021 AND month = 07 AND day = 28 AND atm_location = "Leggett Street" AND transaction_type = "withdraw";
+--| 28500762 
+--| 28296815
+--| 76054385
+--| 49610011
+--| 16153065
+--| 25506511
+--| 81061156
+--| 26013199

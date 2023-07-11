@@ -57,6 +57,7 @@ SELECT hour, minute, origin_airport_id, destination_airport_id, full_name FROM f
 | 16   | 0      | 8                 | 6                      | Fiftyville Regional Airport |
 +------+--------+-------------------+------------------------+-----------------------------+
 
+SELECT hour, minute, origin_airport_id, destination_airport_id, full_name FROM flights, airports WHERE year = 2021 AND month = 07 AND day = 29 AND  destination_airport_id = airports.id ORDER BY hour, minute ASC;
 +------+--------+-------------------+------------------------+-------------------------------------+
 | hour | minute | origin_airport_id | destination_airport_id |              full_name              |
 +------+--------+-------------------+------------------------+-------------------------------------+

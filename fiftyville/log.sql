@@ -46,4 +46,4 @@ SELECT atm_location, transaction_type, account_number amount FROM atm_transactio
 --| 81061156
 --| 26013199
 
-SELECT hour, minute, origin_airport_id, destination_airport_id, full_name FROM flights, airports WHERE origi        
+SELECT hour, minute, origin_airport_id, destination_airport_id, full_name FROM flights, airports WHERE origin_airport_id = airports.id ORDER BY hour, minute ASC;

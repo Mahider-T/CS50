@@ -66,3 +66,19 @@ SELECT hour, minute, origin_airport_id, destination_airport_id, full_name FROM f
 | 15   | 20     | 8                 | 9                      | Tokyo International Airport         |
 | 16   | 0      | 8                 | 6                      | Logan International Airport         |
 +------+--------+-------------------+------------------------+-------------------------------------+
+
+
+--suspects based on account number
+SELECT people.name FROM bank_accounts, people WHERE person_id = id AND account_number IN (SELECT account_number amount FROM atm_transactions WHERE year = 2021 AND month = 07 AND day = 28 AND atm_location = "Leggett Street" AND transaction_type = "withdraw");
++---------+
+|  name   |
++---------+
+| Bruce   |
+| Diana   |
+| Brooke  |
+| Kenny   |
+| Iman    |
+| Luca    |
+| Taylor  |
+| Benista |
++---------+

@@ -50,4 +50,5 @@ CREATE TABLE bakery_security_logs (
     PRIMARY KEY(id)
 );
 
-SELECT people.name FROM people, bakery_security_logs WHERE people.licence_plate = bakery_security_logs.licence_plate;
+--
+SELECT people.name FROM people, bakery_security_logs WHERE people.license_plate = bakery_security_logs.license_plate AND year = 2021 AND month = 07 AND day = 28 AND hour = 10 AND minute >= 15 AND minute <=25;

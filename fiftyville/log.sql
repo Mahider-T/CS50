@@ -146,3 +146,18 @@ sqlite> SELECT * FROM phone_calls, people WHERE receiver = phone_number AND year
 | 233 | (367) 555-5533 | (375) 555-8161 | 2021 | 7     | 28  | 45       | 864400 | Robin  | (375) 555-8161 | NULL            | 4V16VO0       | => NO PASSPORT SO NOT ACCOMPLICE
 | 255 | (770) 555-1861 | (725) 555-3243 | 2021 | 7     | 28  | 49       | 847116 | Philip | (725) 555-3243 | 3391710505      | GW362R6       | => POSSIBLE ACCOMPLICE
 +-----+----------------+----------------+------+-------+-----+----------+--------+--------+----------------+-----------------+---------------+
+
+sqlite> SELECT people.name FROM people, passengers, flights WHERE passengers.flight_id = flights.id AND people.passport_number = passengers.passport_number AND flights.id = 36;
++--------+
+|  name  |
++--------+
+| Doris  |
+| Sofia  |
+| Bruce  |
+| Edward |
+| Kelsey |
+| Taylor |
+| Kenny  |
+| Luca   |
++--------+
+Therfore, the suspect is Bruce, Accomplice is Philip and 

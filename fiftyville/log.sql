@@ -55,3 +55,12 @@ SELECT hour, minute, origin_airport_id, destination_airport_id, full_name FROM f
 | 7    | 54     | 8                 | 1                      | Fiftyville Regional Airport             |
 | 8    | 5      | 8                 | 6                      | Fiftyville Regional Airport             |
 | 8    | 20     | 8                 | 4                      | Fiftyville Regional Airport
+
++------+--------+-------------------+------------------------+-----------------------------------------+
+| hour | minute | origin_airport_id | destination_airport_id |                full_name                |
++------+--------+-------------------+------------------------+-----------------------------------------+
+| 7    | 16     | 8                 | 1                      | O'Hare International Airport            |
+| 7    | 37     | 8                 | 3                      | Los Angeles International Airport       |
+| 7    | 54     | 8                 | 1                      | O'Hare International Airport            |
+| 8    | 5      | 8                 | 6                      | Logan International Airport             |
+| 8    | 20     | 8                 | 4                      | LaGuardia Airport                       |

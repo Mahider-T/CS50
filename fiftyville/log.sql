@@ -131,10 +131,18 @@ SELECT people.name, caller, receiver  FROM phone_calls, people  WHERE caller = p
 | Anna       | (338) 555-6650 | (704) 555-2131 |
 +------------+----------------+----------------+
 
-sqlite> SELECT * FROM phone_calls, people WHERE caller = phone_number AND year = 2021 AND month = 07 AND day = 28 AND duration < 60 AND (name = "Bruce" OR name = "Diana"); 
+sqlite> SELECT * FROM phone_calls, people WHERE caller = phone_number AND year = 2021 AND month = 07 AND day = 28 AND duration < 60 AND (name = "Bruce" OR name = "Diana");
 +-----+----------------+----------------+------+-------+-----+----------+--------+-------+----------------+-----------------+---------------+
 | id  |     caller     |    receiver    | year | month | day | duration |   id   | name  |  phone_number  | passport_number | license_plate |
 +-----+----------------+----------------+------+-------+-----+----------+--------+-------+----------------+-----------------+---------------+
 | 233 | (367) 555-5533 | (375) 555-8161 | 2021 | 7     | 28  | 45       | 686048 | Bruce | (367) 555-5533 | 5773159633      | 94KL13X       |
 | 255 | (770) 555-1861 | (725) 555-3243 | 2021 | 7     | 28  | 49       | 514354 | Diana | (770) 555-1861 | 3592750733      | 322W7JE       |
 +-----+----------------+----------------+------+-------+-----+----------+--------+-------+----------------+-----------------+---------------+
+
+sqlite> SELECT * FROM phone_calls, people WHERE receiver = phone_number AND year = 2021 AND month = 07 AND day = 28 AND duration <= 60 AND (phone_calls.id = 233 OR phone_calls.id = 255);
++-----+----------------+----------------+------+-------+-----+----------+--------+--------+----------------+-----------------+---------------+
+| id  |     caller     |    receiver    | year | month | day | duration |   id   |  name  |  phone_number  | passport_number | license_plate |
++-----+----------------+----------------+------+-------+-----+----------+--------+--------+----------------+-----------------+---------------+
+| 233 | (367) 555-5533 | (375) 555-8161 | 2021 | 7     | 28  | 45       | 864400 | Robin  | (375) 555-8161 | NULL            | 4V16VO0       | => NO PASSPORT SO NOT ACCOMPLICE
+| 255 | (770) 555-1861 | (725) 555-3243 | 2021 | 7     | 28  | 49       | 847116 | Philip | (725) 555-3243 | 3391710505      | GW362R6       | => POSSIBLE ACCOMPLICE
++-----+----------------+----------------+------+-------+-----+----------+--------+--------+----------------+-----------------+---------------+

@@ -82,3 +82,18 @@ SELECT people.name FROM bank_accounts, people WHERE person_id = id AND account_n
 | Taylor  |
 | Benista |
 +---------+
+--suspects based on licese plate
+SELECT people.name FROM people WHERE license_plate IN (SELECT license_plate FROM bakery_security_logs WHERE year = 2021 AND month = 07 AND day = 28 AND hour = 10 AND minute >= 15 A
+ND minute <= 25);
++---------+
+|  name   |
++---------+
+| Vanessa |
+| Barry   |
+| Iman    |
+| Sofia   |
+| Luca    |
+| Diana   |
+| Kelsey  |
+| Bruce   |
++---------+

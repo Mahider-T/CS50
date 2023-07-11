@@ -15,9 +15,9 @@ SELECT license_plate, activity, minute FROM bakery_security_logs WHERE year = 20
 --+---------------+----------+--------+
 --| R3G7486       | entrance | 8      |
 --| 13FNH73       | entrance | 14     |
---| 5P2BI95       | exit     | 16     |
---| 94KL13X       | exit     | 18     |
---| 6P58WS2       | exit     | 18     |
+--| 5P2BI95       | exit     | 16     | => primary suspect
+--| 94KL13X       | exit     | 18     | => secondary suspect
+--| 6P58WS2       | exit     | 18     | => Tertiary suspect
 --| 4328GD8       | exit     | 19     |
 --| G412CB7       | exit     | 20     |
 --| L93JTIZ       | exit     | 21     |

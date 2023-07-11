@@ -23,5 +23,5 @@ SELECT transcript, id FROM interviews WHERE year = 2021 AND month = 07 AND day =
 
 --todo:
     --license plate from security camera of the bakery (within 10 minutes of the theft)
-    --
+    --Theif called someone after leaving bakery(for < 1 minute, earliest flight tomorrow)
 

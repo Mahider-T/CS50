@@ -30,3 +30,24 @@ airports              crime_scene_reports   people
 atm_transactions      flights               phone_calls
 bakery_security_logs  interviews
 bank_accounts         passengers
+CREATE TABLE people (
+    id INTEGER,
+    name TEXT,
+    phone_number TEXT,
+    passport_number INTEGER,
+    license_plate TEXT,
+    PRIMARY KEY(id)
+);
+CREATE TABLE bakery_security_logs (
+    id INTEGER,
+    year INTEGER,
+    month INTEGER,
+    day INTEGER,
+    hour INTEGER,
+    minute INTEGER,
+    activity TEXT,
+    license_plate TEXT,
+    PRIMARY KEY(id)
+);
+
+SELECT people.name FROM people, bakery_security_logs WHERE people.licence_plate = bakery_security_logs.licence_plate;

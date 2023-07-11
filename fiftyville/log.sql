@@ -9,6 +9,14 @@ SELECT id, street FROM crime_scene_reports WHERE year = 2021 AND month = 07 AND 
 --description = Theft of the CS50 duck took place at 10:15am at the Humphrey Street bakery. Interviews were conducted today with three witnesses who were present at the time
 --             – each of their interview transcripts mentions the bakery.
 
+--interviews of witnesses
+SELECT transcript, id FROM interviews WHERE year = 2021 AND month = 07 AND day = 28;
+--ID = 160:
+    --Sometime within ten minutes of the theft, I saw the thief get into a car in the bakery parking lot and drive away.
+    --If you have security footage from the bakery parking lot, you might want to look for cars that left the parking lot in that time frame.
+
+
+
 --Suspect license plate at the given time
 SELECT license_plate, activity, minute FROM bakery_security_logs WHERE year = 2021 AND month = 07 AND day = 28 AND hour = 10;
 -- license_plate | activity | minute |
@@ -25,4 +33,4 @@ SELECT license_plate, activity, minute FROM bakery_security_logs WHERE year = 20
 --| 0NTHK55       | exit     | 23     |
 --| 1106N58       | exit     | 35
 
-SELECT transcript, id FROM interviews WHERE year = 2021 AND month = 07 AND day = 28;
+

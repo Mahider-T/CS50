@@ -47,3 +47,11 @@ SELECT atm_location, transaction_type, account_number amount FROM atm_transactio
 --| 26013199
 
 SELECT hour, minute, origin_airport_id, destination_airport_id, full_name FROM flights, airports WHERE origin_airport_id = airports.id ORDER BY hour, minute ASC;
+
+| hour | minute | origin_airport_id | destination_airport_id |                full_name                |
++------+--------+-------------------+------------------------+-----------------------------------------+
+| 7    | 16     | 8                 | 1                      | Fiftyville Regional Airport             |
+| 7    | 37     | 8                 | 3                      | Fiftyville Regional Airport             |
+| 7    | 54     | 8                 | 1                      | Fiftyville Regional Airport             |
+| 8    | 5      | 8                 | 6                      | Fiftyville Regional Airport             |
+| 8    | 20     | 8                 | 4                      | Fiftyville Regional Airport

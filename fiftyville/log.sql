@@ -57,6 +57,6 @@ SELECT people.name FROM people, bakery_security_logs WHERE people.license_plate 
 SELECT people.name FROM people, phone_calls WHERE people.phone_number = phone_calls.caller AND year = 2021 AND month = 07 AND day = 28 AND duration <= 60;
 --Benista, Bruce, Carina, Diana, Kathryn,Kelsey, Kenny, Sofia, Taylor
 
---common = {Bruce, Diana,  }
+--common = {Bruce: 233, Diana: 255, Kelsey: 224 & 251, Sofia  }
 
 

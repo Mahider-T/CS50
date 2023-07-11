@@ -50,7 +50,7 @@ SELECT hour, minute, origin_airport_id, destination_airport_id, full_name FROM f
 +------+--------+-------------------+------------------------+-----------------------------+
 | hour | minute | origin_airport_id | destination_airport_id |          full_name          |
 +------+--------+-------------------+------------------------+-----------------------------+
-| 8    | 20     | 8                 | 4                      | Fiftyville Regional Airport |
+| 8    | 20     | 8                 | 4                      | Fiftyville Regional Airport | => earliest
 | 9    | 30     | 8                 | 1                      | Fiftyville Regional Airport |
 | 12   | 15     | 8                 | 11                     | Fiftyville Regional Airport |
 | 15   | 20     | 8                 | 9                      | Fiftyville Regional Airport |
@@ -60,7 +60,7 @@ SELECT hour, minute, origin_airport_id, destination_airport_id, full_name FROM f
 +------+--------+-------------------+------------------------+-------------------------------------+
 | hour | minute | origin_airport_id | destination_airport_id |              full_name              |
 +------+--------+-------------------+------------------------+-------------------------------------+
-| 8    | 20     | 8                 | 4                      | LaGuardia Airport                   |
+| 8    | 20     | 8                 | 4                      | LaGuardia Airport                   | => earliest
 | 9    | 30     | 8                 | 1                      | O'Hare International Airport        |
 | 12   | 15     | 8                 | 11                     | San Francisco International Airport |
 | 15   | 20     | 8                 | 9                      | Tokyo International Airport         |

@@ -23,7 +23,7 @@ SELECT transcript, id FROM interviews WHERE year = 2021 AND month = 07 AND day =
 
 
 --Suspect license plate at the given time
-SELECT license_plate, activity, minute FROM bakery_security_logs WHERE year = 2021 AND month = 07 AND day = 28 AND hour = 10;
+SELECT license_plate, activity, minute FROM bakery_security_logs WHERE year = 2021 AND month = 07 AND day = 28 AND hour = 10 AND minute >= 15 AND minute <= 25;
 -- license_plate | activity | minute |
 
 --| 5P2BI95       | exit     | 16     |

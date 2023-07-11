@@ -24,3 +24,5 @@ SELECT license_plate, activity, minute FROM bakery_security_logs WHERE year = 20
 --| 322W7JE       | exit     | 23     |
 --| 0NTHK55       | exit     | 23     |
 --| 1106N58       | exit     | 35
+
+SELECT transcript, id FROM interviews WHERE year = 2021 AND month = 07 AND day = 28;

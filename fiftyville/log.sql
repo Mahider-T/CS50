@@ -21,7 +21,12 @@ SELECT transcript, id FROM interviews WHERE year = 2021 AND month = 07 AND day =
     --As the thief was leaving the bakery, they called someone who talked to them for less than a minute. In the call, I heard the thief say that they were planning to take the earliest flight out of Fiftyville tomorrow.
     --The thief then asked the person on the other end of the phone to purchase the flight ticket.
 
---todo:
+--note:
     --license plate from security camera of the bakery (within 10 minutes of the theft)
     --Theif called someone after leaving bakery(for < 1 minute, earliest flight tomorrow)
+    --Accomplice purchased flight tickets
 
+airports              crime_scene_reports   people
+atm_transactions      flights               phone_calls
+bakery_security_logs  interviews
+bank_accounts         passengers

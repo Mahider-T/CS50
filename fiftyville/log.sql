@@ -31,8 +31,8 @@ SELECT license_plate, activity, minute FROM bakery_security_logs WHERE year = 20
 --| 6P58WS2       | exit     | 18     |
 --| 4328GD8       | exit     | 19     |
 --| G412CB7       | exit     | 20     |
---| L93JTIZ       | exit     | 21     |
---| 322W7JE       | exit     | 23     |
---| 0NTHK55       | exit     | 23     |
+--| L93JTIZ       | exit     | 21     | => 1
+--| 322W7JE       | exit     | 23     | => 2
+--| 0NTHK55       | exit     | 23     | => 3
 
 

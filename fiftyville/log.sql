@@ -38,17 +38,19 @@ CREATE TABLE people (
     license_plate TEXT,
     PRIMARY KEY(id)
 );
-CREATE TABLE bakery_security_logs (
+CREATE TABLE phone_calls (
     id INTEGER,
+    caller TEXT,
+    receiver TEXT,
     year INTEGER,
     month INTEGER,
     day INTEGER,
-    hour INTEGER,
-    minute INTEGER,
-    activity TEXT,
-    license_plate TEXT,
+    duration INTEGER,
     PRIMARY KEY(id)
 );
 
---
+--suspects based on license plate
 SELECT people.name FROM people, bakery_security_logs WHERE people.license_plate = bakery_security_logs.license_plate AND year = 2021 AND month = 07 AND day = 28 AND hour = 10 AND minute >= 15 AND minute <=25 AND activity = "exit";
+-- Barry, Bruce, Diana, Iman, Kelsey, Luca, Sofia, Vanessa
+
+

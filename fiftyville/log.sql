@@ -91,7 +91,7 @@ SELECT people.name FROM people, phone_calls WHERE people.phone_number = phone_ca
 
 --possiible accomplices
 SELECT people.name FROM people, phone_calls WHERE people.phone_number = phone_calls.receiver AND year = 2021 AND month = 07 AND day = 28 AND duration <= 60 AND (phone_calls.id = 233 OR phone_calls.id = 255 OR phone_calls.id = 224 OR phone_calls.id = 251 OR phone_calls.id = 221);
---accomplices: phone_call_id = { Jack: 221, Larry:224, Robin: 233, Melissa: 251, Philip: 255}
+--accomplices: phone_call_id = { Jack: 221, Larry:224, Melissa: 251, Philip: 255, Robin: 233}
 
 --The possible duos (thief:accomplice) = {Bruce: Robin, Diana: Philip, Kelsey: Larry, Kelsey: Melissa, Sofia: Jack}
 

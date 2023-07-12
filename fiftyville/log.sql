@@ -93,13 +93,13 @@ SELECT people.name, atm_transactions.atm_location FROM people, atm_transactions,
 SELECT people.name FROM people, phone_calls WHERE people.phone_number = phone_calls.caller AND year = 2021 AND month = 07 AND day = 28 AND duration <= 60;
 --Benista, Bruce, Carina, Diana, Kathryn,Kelsey, Kenny, Sofia, Taylor
 
---common suspects: phone_call id = {Bruce: 233, Diana: 255, Kelsey: 224 & 251, Sofia: 221 }
+--common suspects: phone_call id = {Bruce: 233, Diana: 255}
 
 --possiible accomplices
 SELECT people.name FROM people, phone_calls WHERE people.phone_number = phone_calls.receiver AND year = 2021 AND month = 07 AND day = 28 AND duration <= 60 AND (phone_calls.id = 233 OR phone_calls.id = 255 OR phone_calls.id = 224 OR phone_calls.id = 251 OR phone_calls.id = 221);
 --accomplices: phone_call_id = { Jack: 221, Larry:224, Melissa: 251, Philip: 255, Robin: 233}
 
---The possible duos (thief:accomplice) = {Bruce: Robin, Diana: Philip, Kelsey: Larry, Kelsey: Melissa, Sofia: Jack}
+--The possible duos (thief:accomplice) = {Bruce: Robin, Diana: Philip}
 
 SELECT people.name, flights.id, passengers.passport_number, flights.hour, flights.minute FROM people, flights, passengers WHERE people.passport_number = passengers.passport_number AND flights.id = passengers.flight_id AND year = 2021 AND month = 07 AND day = 29 ORDER BY hour ASC, minute ASC;
 --peope who took first flight on 29 july 2021 = {Doris, Sofia, Bruce, Edward, Kelsey, Taylor, Kenny, Luca}

@@ -98,4 +98,6 @@ SELECT people.name FROM people, phone_calls WHERE people.phone_number = phone_ca
 SELECT people.name, flights.id, passengers.passport_number, flights.hour, flights.minute FROM people, flights, passengers WHERE people.passport_number = passengers.passport_number AND flights.id = passengers.flight_id AND year = 2021 AND month = 07 AND day = 29 ORDER BY hour ASC, minute ASC;
 --peope who took first flight on 29 july 2021 = {Doris, Sofia, Bruce, Edward, Kelsey, Taylor, Kenny, Luca}
 
+
+
 --filtered duos = {}

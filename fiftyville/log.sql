@@ -83,6 +83,12 @@ CREATE TABLE airports (
 SELECT people.name FROM people, bakery_security_logs WHERE people.license_plate = bakery_security_logs.license_plate AND year = 2021 AND month = 07 AND day = 28 AND hour = 10 AND minute >= 15 AND minute <=25 AND activity = "exit";
 --Barry, Bruce, Diana, Iman, Kelsey, Luca, Sofia, Vanessa
 
+--suspects based on atm transaction
+SELECT people.name, atm_transactions.atm_location FROM people, atm_transactions, bank_accounts WHERE atm_transactions.account_number = bank_accounts.account_number AND bank_accounts.person_id = people.id AND atm_transactions.atm_location = "Leggett Street" AND year = 2021 AND month = 07 AND day = 28 ;
+--Benista, Brooke, Bruce, Diana, Iman, Kaelyn, Kenny, Luca, Taylor
+
+--common of the above two: {Bruce, Diana, Iman, Luca}
+
 --suspects based on phone call less than 1 minute
 SELECT people.name FROM people, phone_calls WHERE people.phone_number = phone_calls.caller AND year = 2021 AND month = 07 AND day = 28 AND duration <= 60;
 --Benista, Bruce, Carina, Diana, Kathryn,Kelsey, Kenny, Sofia, Taylor

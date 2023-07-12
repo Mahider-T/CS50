@@ -7,6 +7,14 @@
         <title>Trivia!</title>
         <script>
             // TODO: Add code to check answers to questions
+            let choices = document.querySelectorAll('button')
+            for(choice in choices){
+                choice.addEventListener('click',function(){
+                    if (choice.innerHTML = "Ethiopia"){
+                        choice.style.backgroundColor = '';
+                    }
+                } )
+            }
         </script>
     </head>
     <body>
@@ -19,6 +27,10 @@
                 <h2>Part 1: Multiple Choice </h2>
                 <hr>
                 <!-- TODO: Add multiple choice question here -->
+                <h3> Which country was never colonized?</h3>
+                <button> Nigeria </button>
+                <button> Ethiopia </button>
+                <button> Senegal </button>
             </div>
 
             <div class="section">

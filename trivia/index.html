@@ -12,7 +12,12 @@
 
             for(const choice of choices){
                 if (choice.innerText == "Ethioipia"){
-                    choice.
+                    choice.style.backgroundColor = "green";
+                    validation.innerHTML = "Correct!";
+                }
+                else{
+                    choice.style.backgroundColor = "red";
+                    validation.innerHTML = "Inorrect!";
                 }
             }
         </script>

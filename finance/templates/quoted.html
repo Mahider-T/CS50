@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    quoted
+{%  endblock %}
+
+{% block main %}
+    <table style = "margin: 0 auto 0 auto">
+        <!-- <thead> -->
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Symbol</th>
+        <!-- </tr> -->
+        </thead>
+        <tbody>
+            <tr>
+                <td> {{ result["name"] }} </td>
+                <td> {{ result["price"] }} </td>
+                <td> {{ result["symbol"] }} </td>
+        </tbody>
+    </table>
+{% endblock %}

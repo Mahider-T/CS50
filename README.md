@@ -27,4 +27,7 @@ This course teaches you how to solve problems, both with and without code, with 
 1. Clone the repository:
     git clone https://github.com/Mahider-T/CS50-.git
 
-    
+
+## "Why so many commits", you ask?
+    CS50 Codespaces (a cloud-based version of Visual Studio Code for CS50) uses a bot to automatically commit every single change no matter the size. In case you were wondering.
+

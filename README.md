@@ -1,6 +1,6 @@
 # CS50: Introduction to Computer Science
 
-This repository contains all the code written during the Harvard CS50 course, excluding the final project. The code covers various topics such as programming fundamentals, data structures, algorithms, web development, databases, and more.
+This repository contains all the assignments and lab practices I worked on while learning CS50: Introduction to Computer Science course. The code covers various topics such as programming fundamentals, data structures, algorithms, web development, databases, and more.
 
 ## Structure
 

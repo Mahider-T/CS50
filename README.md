@@ -10,7 +10,6 @@ Every assignment and lab exercise found in the course are found in the root fold
 
 This course teaches you how to solve problems, both with and without code, with an emphasis on correctness, design, and style. Topics include computational thinking, abstraction, algorithms, data structures, and computer science more generally. 
 
-## Lessons 
 ## Lessons Learned
 - **Week 1: C**: Introduction to the C programming language. Learned about data types, control structures, loops, functions, and pointers.
 - **Week 2: Arrays**: Introduction to arrays and memory management in C.

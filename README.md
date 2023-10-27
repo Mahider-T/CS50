@@ -4,7 +4,7 @@ This repository contains all the code written during the Harvard CS50 course, ex
 
 ## Structure
 
-Every assignment and lab exercise found in the course are found in teh root folder. 
+Every assignment and lab exercise found in the course are found in the root folder. 
 
 ## About CS50
 
